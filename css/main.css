@@ -1,0 +1,10 @@
+/* Настройки лейаута */
+@import "layout/fonts.css";
+@import "layout/base.css";
+
+
+/* Страницы */
+@import "pages/intro.css";
+@import "pages/best.css";
+@import "pages/comments.css"; 
+@import "pages/team.css"; 

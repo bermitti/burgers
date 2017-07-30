@@ -1,0 +1,50 @@
+.comments-list{
+    font-size: 0; /*убрал отступ между блоками inline-block*/
+}
+.comments-list__item{
+    display: inline-block;
+    width: 25%;
+    position: relative;
+}
+.comments-list__item:hover .comments-list__description{
+    display: block;
+}
+.comments-list__img{
+    width: 100%;  /*тянем фото на весь размер*/
+}
+
+.comments-list__description{
+    position: absolute; /* Подменю позиционируются абсолютно */
+    display: none; /* Скрываем подменю */
+    margin-left: 10px; /* Сдвигаем подменю вправо */
+    margin-top: -270px; /* Сдвигаем подменю вверх */
+    z-index: 20;
+    padding: 0 20px;
+}
+.comments-list__description-name{
+    font-family: "Gagalin-Regular";
+    font-size: 14px;
+    line-height: 28,11px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.comments-list__description-text{
+    font-family: "Ubuntu-Light";
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;  
+    margin-bottom: 20px;  
+}
+/*кнопка*/
+.comments__link{
+    padding: 10px 17px;
+    border-radius: 5px;
+    background-color: rgb(47, 50, 52);
+    color: #fff;
+    text-decoration: none;
+    font-family: "Ubuntu-Medium";
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+

@@ -1,0 +1,89 @@
+.intro{
+    background: url(../../img/bg/video-bg.png) center center no-repeat;
+    background-size: cover;
+    min-width: initial;
+    height: 100%;
+    position: relative;
+}
+.header{
+    /* border: 1px solid red; */
+    padding-top: 10px;
+    display: flex; /*задали flex*/
+    align-items: center; /*flex центровка внутренних блоков по вертикали*/
+    justify-content: space-between; /*flex выравниваем блоки внутри*/
+    margin-bottom: 10px;
+}
+.header__logo{
+    margin-right: auto; /*flex оттолкнул все блоки вправо*/
+}
+.logo, .nav-link, .order-link{
+    display: block;
+}
+.nav__item{
+    display: inline-block;
+    vertical-align: middle; /*текст в li по центру*/
+}
+.nav__item:after{
+    display: inline-block; /*рисуем точки после li*/
+    vertical-align: middle;
+    content: ' ';
+    width: 3px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: #fff;
+    margin: 0 12px; /*ставим по центру между li*/
+}
+.nav__item:last-child::after{
+    display: none; /*убрал точку после крайней  li*/
+}
+.nav__item:last-child{
+    margin-right: 12px; /*поставил отступ после крайней  li*/
+}
+.nav__link{
+    font-family: "Ubuntu-Medium";
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.order-link{
+    padding: 10px 17px;
+    border-radius: 5px;
+    background-color: #e45028;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Ubuntu-Medium";
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.order-link:hover{
+    background-color: #fc3904;
+}
+
+.intro__content{
+    display: flex;
+    align-items: center; /*flex центровка внутренних блоков по вертикали*/
+}
+.intro__drops{
+    width: 50%;
+}
+.intro__description{
+    width: 50%;
+}
+.intro__description-title{
+    font-family: "Gagalin-Regular";
+    font-size: 72px;
+    line-height: 85px;
+    color: #f9b43b;
+}
+.intro__description-text{
+    font-family: "Lifehack-Medium";
+    font-size: 65px;
+    line-height: 62px;
+    color: #ffffff;
+    letter-spacing: -2px;
+}
+.intro-arrow{
+    margin-top: 60px;
+    text-align: center;
+}
+
