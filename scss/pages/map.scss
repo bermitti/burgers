@@ -1,0 +1,46 @@
+.map{
+    background: url("../../img/bg/map.png") center center no-repeat;
+    background-size: cover;  //Масштабирование фона
+    position: relative; //для позиционирования футера
+}
+.footer{
+    height: 60px;
+    width: 100%;
+    background: #0d0d0d;
+    position: absolute;
+    bottom: 0;
+}
+.footer-container{
+    display: flex;
+    height: 100%;
+}
+.footer-cont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+        &__address{
+            font-family: 'Ubuntu-Light';
+            font-size: 14px;
+            color: white;
+        }
+        &__phone-link{
+            font-family: 'Ubuntu-Bold';
+            font-size: 14px;
+            color: #e45028;
+        }
+}
+.footer-social{
+    padding-top: 20px;
+    text-align: right;
+    width: 50%;
+
+        &__item{
+            display: inline-block;
+            margin-left: 10px;
+        }
+        // &__link{
+        //     display: block;
+        // }
+}

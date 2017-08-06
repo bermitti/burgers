@@ -1,0 +1,54 @@
+.food-menu{
+    background: url("../../img/bg/bg-food-menu.png") center center no-repeat;
+    background-size: cover;  //Масштабирование фона
+    position: relative;
+}
+.food-menu__title{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-family: "Gagalin-Regular";
+    font-size: 72px;
+    line-height: 1;
+    color: #fff;
+}
+
+.food-accordeon{
+     overflow:hidden;   
+     color:#474747;  
+     display: flex;
+     justify-content: flex-end; 
+}
+
+
+
+.food-accordeon__item{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.food-accordeon__title{
+    display: block;
+    height: 650px;
+    width: 80px;
+    padding-top: 50px;
+    
+        p{
+            transform: rotate(-90deg);
+            margin: 0;
+            float: left;
+        }
+}
+.food-accordeon__content{
+    display: none;
+}
+
+.meat-menu{
+    background: url("../../img/food-menu/meat-menu.png");
+}
+.veget-menu{
+    background: url("../../img/food-menu/veget-menu.png");
+}
+.diet-menu{
+    background: url("../../img/food-menu/diet-menu.png");
+}

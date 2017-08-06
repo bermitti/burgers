@@ -12,18 +12,20 @@
     align-items: center; /*flex центровка внутренних блоков по вертикали*/
     justify-content: space-between; /*flex выравниваем блоки внутри*/
     margin-bottom: 10px;
-}
-.header__logo{
+
+        &__logo{
     margin-right: auto; /*flex оттолкнул все блоки вправо*/
+    }
 }
+
 .logo, .nav-link, .order-link{
     display: block;
 }
 .nav__item{
     display: inline-block;
     vertical-align: middle; /*текст в li по центру*/
-}
-.nav__item:after{
+
+    &:after{
     display: inline-block; /*рисуем точки после li*/
     vertical-align: middle;
     content: ' ';
@@ -32,13 +34,19 @@
     border-radius: 1.5px;
     background-color: #fff;
     margin: 0 12px; /*ставим по центру между li*/
+    }
+
+    &:last-child{
+        margin-right: 12px; /*поставил отступ после крайней  li*/
+
+        &:after{
+            display: none; /*убрал точку после крайней  li*/
+        }
+    }
+
+    
 }
-.nav__item:last-child::after{
-    display: none; /*убрал точку после крайней  li*/
-}
-.nav__item:last-child{
-    margin-right: 12px; /*поставил отступ после крайней  li*/
-}
+
 .nav__link{
     font-family: "Ubuntu-Medium";
     font-size: 13px;
@@ -54,9 +62,10 @@
     font-size: 13px;
     text-transform: uppercase;
     transition: 1s;
-}
-.order-link:hover{
-    background-color: #fc3904;
+
+        &:hover{
+            background-color: #fc3904;
+        }
 }
 
 .intro__content{
