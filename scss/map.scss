@@ -1,5 +1,10 @@
-.map{
-    background: url('../../img/map/map.png') center center no-repeat;
+
+.map-img{
+    height: 100%;
+    position: relative;
+}
+.map-container{
+    background: url('../img/map/map.png') center center no-repeat;
     background-size: cover;
     position: relative;
 }

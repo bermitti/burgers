@@ -17,45 +17,21 @@
 }
 .team__content{
     width: 380/540*100%;
-    padding-top: 35px;
+    padding-top: 60px;
 }
 .team__title{
     font-family: 'Gagalin-Regular';
     font-size: 72px;
-    line-height: 64px;
     color: #f9b43b;
-    margin-bottom: 20px;
+    margin-bottom: 63px;
 }
-.team-accordeon__title{
-    font-family: 'Gagalin-Regular';
-    font-size: 14px;
-    line-height: 28px;
-    color: #fff;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-
-
-        &:before{
-            content: "";
-            width: 0;
-            height: 0;
-            border: 9px solid transparent;
-            border-bottom: none;
-            border-top-color: #f9b43b;
-            margin-right: 10px;
-        }
-}
-
-.team-accordeon__content{
-    height: 0;
-}
-
 .team-accordeon__item{
     display: flex;
-    margin-bottom: 10px;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 20px;
 
-    .active{
+    &.active{
         .team-accordeon__title{
             color: #f9b43b;
 
@@ -64,12 +40,42 @@
             }
         }
         .team-accordeon__content{
-            height: auto;
+            height: auto; //показываем содержимое для класса active
         }
 
     }
 }
+.team-accordeon__title{
+    font-family: 'Gagalin-Regular';
+    font-size: 14px;
+    // line-height: 28px;
+    color: #fff;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
 
+        &:before{
+            content: "";
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-bottom: none;
+            border-top-color: #f9b43b;
+            margin-right: 10px;
+        }
+}
+
+
+
+
+
+.team-accordeon__content{
+    margin-left: 18px;
+    height: 0; //прячем содержимое
+    display: flex;
+    flex-direction: row;
+}
+//делаем круглое окно для картинки
 .team-accordeon__avatar{
     width: 100px;
     height: 100px;
@@ -77,6 +83,7 @@
     border-radius: 50%;
     position: relative;
 }
+//центрируем картинку
 .team-accordeon__avatar-pic{
     position: absolute;
     top: 50%;
@@ -84,10 +91,17 @@
     transform: translate(-50%, -50%);
     height: 100%;
 }
+.team-accordeon__description{
+    margin-left: 20px;
+    padding-top: 2px;
+    padding-right: 20px;
+}
 .team-accordeon__desc-occupation{
     font-family: 'Ubuntu-Bold';
+    font-weight: 900;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 1;
+    letter-spacing: 1px;
     color: #fff;
     margin-bottom: 10px;
 }
@@ -100,9 +114,5 @@
 }
 
 
-
-.team-accordeon{
-    border: 1px solid red;
-}
 
 
