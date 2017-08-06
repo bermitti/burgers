@@ -1,0 +1,108 @@
+.team {
+  background: url("../../img/bg/bg-team.png") center center no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.team__container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(50, 52, 54, 0.9);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center; }
+
+.team__content {
+  width: 70.37037%;
+  padding-top: 35px; }
+
+.team__title {
+  font-family: 'Gagalin-Regular';
+  font-size: 72px;
+  line-height: 64px;
+  color: #f9b43b;
+  margin-bottom: 20px; }
+
+.team-accordeon__title {
+  font-family: 'Gagalin-Regular';
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .team-accordeon__title:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom: none;
+    border-top-color: #f9b43b;
+    margin-right: 10px; }
+
+.team-accordeon__content {
+  height: 0; }
+
+.team-accordeon__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px; }
+  .team-accordeon__item .active .team-accordeon__title {
+    color: #f9b43b; }
+    .team-accordeon__item .active .team-accordeon__title:before {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  .team-accordeon__item .active .team-accordeon__content {
+    height: auto; }
+
+.team-accordeon__avatar {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative; }
+
+.team-accordeon__avatar-pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%; }
+
+.team-accordeon__desc-occupation {
+  font-family: 'Ubuntu-Bold';
+  font-size: 14px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 10px; }
+
+.team-accordeon__desc-text {
+  font-family: 'Ubuntu-Light';
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 10px; }
+
+.team-accordeon {
+  border: 1px solid red; }

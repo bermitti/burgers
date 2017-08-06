@@ -1,0 +1,18 @@
+.team__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.team__content {
+  border: 1px dotted yellow;
+  width: 50%; }
+
+.team {
+  background: url("../img/bg/bg-team.png") center center no-repeat;
+  background-size: cover;
+  position: relative; }

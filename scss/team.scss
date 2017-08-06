@@ -1,0 +1,108 @@
+
+.team{
+    background: url('../../img/bg/bg-team.png') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.team__container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background: rgba(#323436, 0.9);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.team__content{
+    width: 380/540*100%;
+    padding-top: 35px;
+}
+.team__title{
+    font-family: 'Gagalin-Regular';
+    font-size: 72px;
+    line-height: 64px;
+    color: #f9b43b;
+    margin-bottom: 20px;
+}
+.team-accordeon__title{
+    font-family: 'Gagalin-Regular';
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+
+        &:before{
+            content: "";
+            width: 0;
+            height: 0;
+            border: 9px solid transparent;
+            border-bottom: none;
+            border-top-color: #f9b43b;
+            margin-right: 10px;
+        }
+}
+
+.team-accordeon__content{
+    height: 0;
+}
+
+.team-accordeon__item{
+    display: flex;
+    margin-bottom: 10px;
+
+    .active{
+        .team-accordeon__title{
+            color: #f9b43b;
+
+            &:before{
+                transform: rotate(180deg);
+            }
+        }
+        .team-accordeon__content{
+            height: auto;
+        }
+
+    }
+}
+
+.team-accordeon__avatar{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+.team-accordeon__avatar-pic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}
+.team-accordeon__desc-occupation{
+    font-family: 'Ubuntu-Bold';
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.team-accordeon__desc-text{
+    font-family: 'Ubuntu-Light';
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+
+.team-accordeon{
+    border: 1px solid red;
+}
+
+
