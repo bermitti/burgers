@@ -1,27 +1,27 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Gagalin-Regular';
-  src: url("../../fonts/Gagalin-Regular.woff") format("woff"); }
+  src: url("../fonts/Gagalin-Regular.woff") format("woff"); }
 
 @font-face {
   font-family: 'Lifehack-Medium';
-  src: url("../../fonts/Lifehack-Medium.woff") format("woff"); }
+  src: url("../fonts/Lifehack-Medium.woff") format("woff"); }
 
 @font-face {
   font-family: 'Ubuntu-Bold';
-  src: url("../../fonts/Ubuntu-Bold.woff") format("woff"); }
+  src: url("../fonts/Ubuntu-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: 'Ubuntu-Medium';
-  src: url("../../fonts/Ubuntu-Medium.woff") format("woff"); }
+  src: url("../fonts/Ubuntu-Medium.woff") format("woff"); }
 
 @font-face {
   font-family: 'Ubuntu-Light';
-  src: url("../../fonts/Ubuntu-Light.woff") format("woff"); }
+  src: url("../fonts/Ubuntu-Light.woff") format("woff"); }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu.woff") format("woff"); }
+  src: url("../fonts/Ubuntu.woff") format("woff"); }
 
 html, body {
   width: 100%;
@@ -69,7 +69,7 @@ a {
   text-decoration: none; }
 
 .intro {
-  background: url(../../img/bg/video-bg.png) center center no-repeat;
+  background: url(../img/bg/video-bg.png) center center no-repeat;
   background-size: cover;
   min-width: initial;
   height: 100%;
@@ -178,7 +178,7 @@ a {
   text-align: center; }
 
 .best {
-  background: url(../../img/bg/bestImg.png) center center no-repeat;
+  background: url(../img/bg/bestImg.png) center center no-repeat;
   background-size: cover;
   /*растягиваем на всю ширину окна*/
   min-width: initial;
@@ -216,7 +216,7 @@ a {
   color: #2f3234; }
 
 .team {
-  background: url("../../img/bg/bg-team.png") center center no-repeat;
+  background: url("../img/bg/bg-team.png") center center no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -344,7 +344,7 @@ a {
   margin-bottom: 10px; }
 
 .food-menu {
-  background: url("../../img/bg/bg-food-menu.png") center center no-repeat;
+  background: url("../img/bg/bg-food-menu.png") center center no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -389,13 +389,13 @@ a {
   display: none; }
 
 .meat-menu {
-  background: url("../../img/food-menu/meat-menu.png"); }
+  background: url("../img/food-menu/meat-menu.png"); }
 
 .veget-menu {
-  background: url("../../img/food-menu/veget-menu.png"); }
+  background: url("../img/food-menu/veget-menu.png"); }
 
 .diet-menu {
-  background: url("../../img/food-menu/diet-menu.png"); }
+  background: url("../img/food-menu/diet-menu.png"); }
 
 .comments-list {
   font-size: 0;
@@ -452,8 +452,12 @@ a {
   -o-transition: 1s;
   transition: 1s; }
 
+.order {
+  background: url(../img/bg/bg-order-texture.png) center center no-repeat;
+  background-size: cover; }
+
 .map {
-  background: url("../../img/bg/map.png") center center no-repeat;
+  background: url("../img/bg/map.png") center center no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -502,3 +506,5 @@ a {
   .footer-social__item {
     display: inline-block;
     margin-left: 10px; }
+  .footer-social__link {
+    display: block; }

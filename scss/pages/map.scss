@@ -1,5 +1,5 @@
 .map{
-    background: url("../../img/bg/map.png") center center no-repeat;
+    background: url("../img/bg/map.png") center center no-repeat;
     background-size: cover;  //Масштабирование фона
     position: relative; //для позиционирования футера
 }
@@ -40,7 +40,7 @@
             display: inline-block;
             margin-left: 10px;
         }
-        // &__link{
-        //     display: block;
-        // }
+        &__link{
+            display: block;
+        }
 }
