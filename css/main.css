@@ -59,10 +59,10 @@ img {
   height: auto; }
 
 .section {
-  height: 100%;
+  height: 100vh;
+  min-height: 650px;
   background-color: rgba(0, 0, 0, 0.31);
-  min-width: 940px;
-  min-height: 650px; }
+  min-width: 940px; }
 
 a {
   color: white;
@@ -218,7 +218,9 @@ a {
 .team {
   background: url("../img/bg/bg-team.png") center center no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  height: 100vh;
+  min-height: 650px; }
 
 .team__container {
   position: absolute;
@@ -346,56 +348,75 @@ a {
 .food-menu {
   background: url("../img/bg/bg-food-menu.png") center center no-repeat;
   background-size: cover;
+  padding-top: 110px;
+  position: relative;
+  height: 100vh;
+  min-height: 650px;
   position: relative; }
 
 .food-menu__title {
-  position: absolute;
-  top: 100px;
-  left: 100px;
   font-family: "Gagalin-Regular";
   font-size: 72px;
   line-height: 1;
   color: #fff; }
 
+.food-menu__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
 .food-accordeon {
-  overflow: hidden;
-  color: #474747;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
+  height: 100%; }
 
 .food-accordeon__item {
-  display: inline-block;
-  overflow: hidden; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .food-accordeon__item_active .food-accordeon__popup {
+    padding: 60px 30px;
+    width: 540px;
+    color: white; }
 
-.food-accordeon__title {
-  display: block;
-  height: 650px;
-  width: 80px;
+.food-accordeon__type {
+  position: relative;
   padding-top: 50px; }
-  .food-accordeon__title p {
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    margin: 0;
-    float: left; }
+  .food-accordeon__type_bg-meat {
+    background: url("../img/food-menu/meat-menu.png"); }
+  .food-accordeon__type_bg-veget {
+    background: url("../img/food-menu/veget-menu.png"); }
+  .food-accordeon__type_bg-diet {
+    background: url("../img/food-menu/diet-menu.png"); }
 
-.food-accordeon__content {
-  display: none; }
+.food-accordeon__wrapper {
+  width: 80px; }
 
-.meat-menu {
-  background: url("../img/food-menu/meat-menu.png"); }
+.food-accordeon__link {
+  font-family: 'Gagalin-Regular', serif;
+  font-size: 40px;
+  line-height: 64px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+  -ms-transform: translate(-50%, -50%) rotate(-90deg);
+  transform: translate(-50%, -50%) rotate(-90deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  white-space: nowrap; }
 
-.veget-menu {
-  background: url("../img/food-menu/veget-menu.png"); }
-
-.diet-menu {
-  background: url("../img/food-menu/diet-menu.png"); }
+.food-accordeon__popup {
+  background-color: rgba(47, 50, 52, 0.93);
+  font-weight: 300;
+  width: 0;
+  padding: 0;
+  overflow: hidden; }
 
 .comments-list {
   font-size: 0;
@@ -508,3 +529,7 @@ a {
     margin-left: 10px; }
   .footer-social__link {
     display: block; }
+
+.footer-sprite {
+  width: 1.25rem;
+  height: 1.25rem; }

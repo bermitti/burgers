@@ -1,54 +1,86 @@
 .food-menu{
     background: url("../img/bg/bg-food-menu.png") center center no-repeat;
     background-size: cover;  //Масштабирование фона
+    padding-top: 110px;
     position: relative;
+    height: 100vh;     //переннести в base как section
+    min-height: 650px; //переннести в base как section
+    position: relative;//переннести в base как section
 }
+// оформление заголовка меню
 .food-menu__title{
-    position: absolute;
-    top: 100px;
-    left: 100px;
     font-family: "Gagalin-Regular";
     font-size: 72px;
     line-height: 1;
     color: #fff;
 }
-
+// позиционирование аккордиона
+.food-menu__wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
 .food-accordeon{
-     overflow:hidden;   
-     color:#474747;  
-     display: flex;
-     justify-content: flex-end; 
+    display: flex;
+    height: 100%;
 }
-
-
-
 .food-accordeon__item{
-    display: inline-block;
-    overflow: hidden;
-}
+    display: flex;
 
-.food-accordeon__title{
-    display: block;
-    height: 650px;
-    width: 80px;
-    padding-top: 50px;
-    
-        p{
-            transform: rotate(-90deg);
-            margin: 0;
-            float: left;
+        &_active{
+            .food-accordeon__popup{
+                padding: 60px 30px;
+                width: 540px; 
+                color: white;
+            }
         }
 }
-.food-accordeon__content{
-    display: none;
+
+
+.food-accordeon__type{
+    position: relative;
+    padding-top: 50px;
+ //задаём фон пунктам меню   
+        &_bg-meat{
+            background: url("../img/food-menu/meat-menu.png");
+        }
+        &_bg-veget{
+            background: url("../img/food-menu/veget-menu.png");
+        }
+        &_bg-diet{
+            background: url("../img/food-menu/diet-menu.png");
+        }
 }
 
-.meat-menu{
-    background: url("../img/food-menu/meat-menu.png");
+.food-accordeon__wrapper{
+    width: 80px; //почему если не задаю тут ширину блок схлопывается?
+    // background-color: rgba(0, 0, 0, 0.55);  вариант с затемнением фона
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
 }
-.veget-menu{
-    background: url("../img/food-menu/veget-menu.png");
+
+.food-accordeon__link{
+    font-family: 'Gagalin-Regular', serif;
+    font-size: 40px;
+    line-height: 64px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    white-space: nowrap; // почему переносит слова 'для мясоедов'?
 }
-.diet-menu{
-    background: url("../img/food-menu/diet-menu.png");
+
+.food-accordeon__popup{
+    background-color: rgba(47, 50, 52, 0.93);
+    font-weight: 300;
+    width: 0;
+    padding: 0;
+    overflow: hidden;
 }
