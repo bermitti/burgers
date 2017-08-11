@@ -140,7 +140,7 @@ a {
   -o-transition: 1s;
   transition: 1s; }
   .order-link:hover {
-    background-color: #fc3904; }
+    opacity: 0.7; }
 
 .intro__content {
   display: -webkit-box;
@@ -382,14 +382,16 @@ a {
     color: white; }
 
 .food-accordeon__type {
-  position: relative;
-  padding-top: 50px; }
+  position: relative; }
   .food-accordeon__type_bg-meat {
-    background: url("../img/food-menu/meat-menu.png"); }
+    background: url("../img/food-menu/meat-menu.png");
+    background-size: cover; }
   .food-accordeon__type_bg-veget {
-    background: url("../img/food-menu/veget-menu.png"); }
+    background: url("../img/food-menu/veget-menu.png");
+    background-size: cover; }
   .food-accordeon__type_bg-diet {
-    background: url("../img/food-menu/diet-menu.png"); }
+    background: url("../img/food-menu/diet-menu.png");
+    background-size: cover; }
 
 .food-accordeon__wrapper {
   width: 80px; }
@@ -473,7 +475,142 @@ a {
 
 .order {
   background: url(../img/bg/bg-order-texture.png) center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding-top: 90px;
+  font-family: "Ubuntu-Light";
+  font-size: 14px;
+  color: white; }
+
+.order__title {
+  text-align: center;
+  margin-bottom: 90px;
+  font-family: 'Gagalin-Regular';
+  font-size: 72px;
+  color: #f9b43b; }
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.form__col {
+  padding: 0 10px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.form__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px; }
+
+.form__label-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-right: 20px; }
+  .form__label-wrapper:last-child {
+    margin-right: 0; }
+
+.form__checkbox-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 20px; }
+  .form__checkbox-wrapper:last-child {
+    margin-right: 0px; }
+
+.form__input {
+  border-radius: 5px;
+  padding: 10px 5px; }
+
+.form__radio {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .form__radio:checked:before {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background: #e35028; }
+
+.form__checkbox {
+  margin-right: 10px;
+  position: relative; }
+  .form__checkbox:checked:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 40%;
+    border-bottom: solid 2px #e35028;
+    border-left: solid 2px #e35028;
+    position: absolute;
+    top: 32%;
+    left: 47%;
+    -webkit-transform: translate(-50%, -50%) rotate(-60deg);
+    -ms-transform: translate(-50%, -50%) rotate(-60deg);
+    transform: translate(-50%, -50%) rotate(-60deg); }
+
+.form__submit {
+  font-family: "Ubuntu-Medium";
+  font-size: 13px;
+  margin-right: 10px;
+  background-color: #e45028;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  padding: 5px 10px;
+  border-radius: 05px;
+  text-transform: uppercase;
+  color: #fff;
+  vertical-align: middle;
+  border: none;
+  cursor: pointer; }
+  .form__submit:hover {
+    opacity: 0.7; }
+
+.form__reset {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer; }
+  .form__reset:focus {
+    outline: none;
+    font-weight: bold; }
 
 .map {
   background: url("../img/bg/map.png") center center no-repeat;

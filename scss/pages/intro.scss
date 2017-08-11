@@ -11,10 +11,9 @@
     align-items: center; /*flex центровка внутренних блоков по вертикали*/
     justify-content: space-between; /*flex выравниваем блоки внутри*/
     margin-bottom: 10px;
-
         &__logo{
-    margin-right: auto; /*flex оттолкнул все блоки вправо*/
-    }
+            margin-right: auto; /*flex оттолкнул все блоки вправо*/
+        }
 }
 
 .logo, .nav-link, .order-link{
@@ -23,25 +22,22 @@
 .nav__item{
     display: inline-block;
     vertical-align: middle; /*текст в li по центру*/
-
-    &:after{
-    display: inline-block; /*рисуем точки после li*/
-    vertical-align: middle;
-    content: ' ';
-    width: 3px;
-    height: 3px;
-    border-radius: 1.5px;
-    background-color: #fff;
-    margin: 0 12px; /*ставим по центру между li*/
-    }
-
-    &:last-child{
-        margin-right: 12px; /*поставил отступ после крайней  li*/
-
         &:after{
-            display: none; /*убрал точку после крайней  li*/
+            display: inline-block; /*рисуем точки после li*/
+            vertical-align: middle;
+            content: ' ';
+            width: 3px;
+            height: 3px;
+            border-radius: 1.5px;
+            background-color: #fff;
+            margin: 0 12px; /*ставим по центру между li*/
         }
-    }
+        &:last-child{
+            margin-right: 12px; /*поставил отступ после крайней  li*/
+                &:after{
+                    display: none; /*убрал точку после крайней  li*/
+                }
+        }
 
     
 }
@@ -61,9 +57,8 @@
     font-size: 13px;
     text-transform: uppercase;
     transition: 1s;
-
         &:hover{
-            background-color: #fc3904;
+            opacity: 0.7;
         }
 }
 

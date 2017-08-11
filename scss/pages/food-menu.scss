@@ -40,16 +40,18 @@
 
 .food-accordeon__type{
     position: relative;
-    padding-top: 50px;
  //задаём фон пунктам меню   
         &_bg-meat{
             background: url("../img/food-menu/meat-menu.png");
+            background-size: cover;  //Масштабирование фона
         }
         &_bg-veget{
             background: url("../img/food-menu/veget-menu.png");
+            background-size: cover;  //Масштабирование фона
         }
         &_bg-diet{
             background: url("../img/food-menu/diet-menu.png");
+            background-size: cover;  //Масштабирование фона
         }
 }
 

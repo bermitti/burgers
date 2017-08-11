@@ -329,10 +329,89 @@
             <!-- СЕКЦИЯ 7 ОФОРМЛЕНИЕ ЗАКАЗА -->
 
             <section class="section order">
-                <svg class=”footer-sprite“>
-                    <use xlink:href='img/map/sprite/sprite.svg#vk'></use>
-                </svg>
-                    <img src="img\map\vk.png" alt="">
+                <div class="container"> 
+                    <div class="order__title">Закажите доставку</div>
+                    <form action="" class="form">
+                        <!-- форма, первая колонка -->
+                        <div class="form__col">
+                            <!-- поле ввода Имя Телефон -->
+                            <div class="form__row">
+                                <div class="form__label-wrapper">
+                                    <label for="form__name" class="form__label">Имя</label>
+                                    <input type="text" name="name" class="form__input" id="form-name" size="2">
+                                </div>
+                                <div class="form__label-wrapper">
+                                    <label for="form-tel" class="form__label">Телефон</label>
+                                    <input type="text" name="phone" class="form__input" id="form-tel" size="2">
+                                </div>
+                            </div>
+                            <!-- поле ввода, - улица -->
+                            <div class="form__row">
+                                <div class="form__label-wrapper">
+                                    <label for="form-street" class="form__label">Улица</label>
+                                    <input type="text" name="street" class="form__input" id="form-street" size="4">
+                                </div>
+                            </div>
+                            <!-- поле ввода, - дом, корпус, квартира, этаж -->
+                            <div class="form__row">
+                                <div class="form__label-wrapper">
+                                    <label for="form-home" class="form__label">Дом</label>
+                                    <input type="text" name="" class="form__input" id="form-home" size="1">
+                                </div>
+                                <div class="form__label-wrapper">
+                                    <label for="form-corp" class="form__label">Корпус</label>
+                                    <input type="text" name="" class="form__input" id="form-corp" size="1">
+                                </div>
+                                <div class="form__label-wrapper">
+                                    <label for="form-flat" class="form__label">Квартира</label>
+                                    <input type="text" name="" class="form__input" id="form-flat" size="1">
+                                </div>
+                                <div class="form__label-wrapper">
+                                    <label for="form-floor" class="form__label">Этаж</label>
+                                    <input type="text" name="" class="form__input" id="form-floor" size="1">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- форма, вторая колонка -->
+                        <div class="form__col">
+                            <!-- поле ввода комментария -->
+                            <div class="form__row">
+                                <div class="form__label-wrapper">  
+                                    <label for="form-comment" class="form__label">Комментарии</label>
+                                    <textarea name="" id="form-comment" cols="30" rows="10" class="form__input"></textarea>
+                                </div>
+                            </div>
+                            <!-- поле выбора либо то либо то, - radio -->
+                             <!-- значение атрибута name="payment" для всех переключателей одинаково 
+                            именно в таком случае браузер понимает, что переключатели связаны между собой 
+                            и помечает только один пункт из предложенных  -->
+                            <div class="form__row">
+                                <div class="form__checkbox-wrapper">
+                                    <input type="radio" name="payment" class="form__radio" id="form-payment-cash" value="cash" checked>
+                                    <label for="form-payment-cash" class="form__label">Потребуется сдача</label>
+                                </div>
+                                <div class="form__checkbox-wrapper">
+                                    <input type="radio" name="payment" class="form__radio" id="form-payment-card" value="card">
+                                    <label for="form-payment-card" class="form__label">Оплата по карте</label>
+                                </div>
+                            </div>
+                            <!-- поле выбора checkbox -->
+                            <div class="form__row">
+                                <div class="form__checkbox-wrapper">
+                                    <input type="checkbox" name="callback" class="form__checkbox" id="form-callback" value="false" checked>
+                                    <label for="form-callback" class="form__label">Не перезванивать</label>
+                                </div>
+                            </div>
+                            <!-- поле кнопок Заказать Очистить -->
+                            <div class="form__row">
+                                <input type="submit" value="Заказать" class="form__submit">
+                                <input type="submit" value="Очистить" class="form__reset">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
             </section>
 
             <!-- СЕКЦИЯ 8 ОФОРМЛЕНИЕ КОНТАКТЫ -->            
