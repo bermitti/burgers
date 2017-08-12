@@ -180,7 +180,8 @@ a {
   background: url(../img/bg/bestImg.png) center center no-repeat;
   background-size: cover;
   /*растягиваем на всю ширину окна*/
-  min-width: initial; }
+  padding-top: 70px;
+  padding-bottom: 20px; }
 
 .best__title {
   font-family: "Gagalin-Regular";
@@ -188,7 +189,6 @@ a {
   line-height: 64px;
   color: #2f3234;
   text-align: center;
-  padding-top: 70px;
   margin-bottom: 85px; }
 
 .best-list__item {
@@ -418,33 +418,61 @@ a {
   padding: 0;
   overflow: hidden; }
 
-.comments-list {
-  font-size: 0;
-  /*убрал отступ между блоками inline-block*/ }
+.comments {
+  height: 100vh;
+  min-height: 650px;
+  background-color: rgba(0, 0, 0, 0.31);
+  min-width: 100vw; }
 
 .comments-list__item {
   display: inline-block;
-  width: 25%;
-  position: relative; }
+  min-height: 50vh;
+  width: 25vw;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  position: relative;
+  overflow: hidden; }
+  .comments-list__item:hover .comments-list__description {
+    display: block; }
 
-.comments-list__item:hover .comments-list__description {
-  display: block; }
-
-.comments-list__img {
-  width: 100%;
-  /*тянем фото на весь размер*/ }
+.comments-list {
+  font-size: 0;
+  /*убрал отступ между блоками inline-block*/ }
+  .comments-list__img1 {
+    background: url(../img/comments/12.png) center;
+    background-size: cover; }
+  .comments-list__img2 {
+    background: url(../img/comments/2.png) center;
+    background-size: cover; }
+  .comments-list__img3 {
+    background: url(../img/comments/3.png) center;
+    background-size: cover; }
+  .comments-list__img4 {
+    background: url(../img/comments/4.png) center;
+    background-size: cover; }
+  .comments-list__img5 {
+    background: url(../img/comments/5.png) center;
+    background-size: cover; }
+  .comments-list__img6 {
+    background: url(../img/comments/6.png) center;
+    background-size: cover; }
+  .comments-list__img7 {
+    background: url(../img/comments/7.png) center;
+    background-size: cover; }
+  .comments-list__img8 {
+    background: url(../img/comments/8.png) center;
+    background-size: cover; }
 
 .comments-list__description {
   position: absolute;
   /* Подменю позиционируются абсолютно */
   display: none;
   /* Скрываем подменю */
-  margin-left: 10px;
-  /* Сдвигаем подменю вправо */
-  margin-top: -270px;
-  /* Сдвигаем подменю вверх */
+  height: 100%;
+  width: 100%;
   z-index: 20;
-  padding: 0 20px; }
+  padding: 50px 30px 10px 20px;
+  background-color: rgba(20, 20, 20, 0.7); }
 
 .comments-list__description-name {
   font-family: "Gagalin-Regular";

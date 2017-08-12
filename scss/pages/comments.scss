@@ -1,25 +1,71 @@
-.comments-list{
-    font-size: 0; /*убрал отступ между блоками inline-block*/
-}
+//размер, параметры и фон секции
+.comments{
+    height: 100vh;
+    min-height: 650px;
+    background-color: rgba(0, 0, 0, 0.31);
+    min-width: 100vw;
+ }
+
 .comments-list__item{
     display: inline-block;
-    width: 25%;
+    min-height: 50vh;
+    width: 25vw;
+    filter: grayscale(100%);
     position: relative;
-}
-.comments-list__item:hover .comments-list__description{
-    display: block;
-}
-.comments-list__img{
-    width: 100%;  /*тянем фото на весь размер*/
+    overflow: hidden;
+        //отображение текста при наведении
+        &:hover{
+            .comments-list__description{
+                display: block;
+            }
+        }
 }
 
+.comments-list{
+    font-size: 0; /*убрал отступ между блоками inline-block*/
+        &__img1{
+            background: url(../img/comments/12.png) center;
+            background-size: cover;
+        }
+        &__img2{
+            background: url(../img/comments/2.png) center;
+            background-size: cover;
+        }
+        &__img3{
+            background: url(../img/comments/3.png) center;
+            background-size: cover;
+        }
+        &__img4{
+            background: url(../img/comments/4.png) center;
+            background-size: cover;
+        }
+        &__img5{
+            background: url(../img/comments/5.png) center;
+            background-size: cover;
+        }
+        &__img6{
+            background: url(../img/comments/6.png) center;
+            background-size: cover;
+        }
+        &__img7{
+            background: url(../img/comments/7.png) center;
+            background-size: cover;
+        }
+        &__img8{
+            background: url(../img/comments/8.png) center;
+            background-size: cover;
+        }
+}
+
+//всплывающий комментарий
 .comments-list__description{
     position: absolute; /* Подменю позиционируются абсолютно */
     display: none; /* Скрываем подменю */
-    margin-left: 10px; /* Сдвигаем подменю вправо */
-    margin-top: -270px; /* Сдвигаем подменю вверх */
+    height: 100%;
+    width: 100%;
     z-index: 20;
-    padding: 0 20px;
+    padding: 50px 30px 10px 20px;
+    background-color: rgba(20, 20, 20, 0.7); //цвет и прозрачность фона
 }
 .comments-list__description-name{
     font-family: "Gagalin-Regular";

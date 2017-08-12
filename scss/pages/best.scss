@@ -1,15 +1,17 @@
 .best{
     background: url(../img/bg/bestImg.png) center center no-repeat;
     background-size: cover; /*растягиваем на всю ширину окна*/
-    min-width: initial;
+    padding-top: 70px;
+    padding-bottom: 20px;
 }
+
 .best__title{
     font-family: "Gagalin-Regular";
     font-size: 72px;
     line-height: 64px;
     color: #2f3234;
     text-align: center;
-    padding-top: 70px; 
+    // padding-top: 70px; 
     margin-bottom: 85px;
 }
 .best-list__item{
