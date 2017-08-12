@@ -641,6 +641,8 @@ a {
   .form__reset:focus {
     outline: none;
     font-weight: bold; }
+  .form__reset:hover {
+    font-weight: bold; }
 
 .map {
   background: url("../img/bg/map.png") center center no-repeat;

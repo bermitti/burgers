@@ -118,6 +118,9 @@
             outline: none; //убираем рамки при нажатии
             font-weight: bold;
         }
+        &:hover{
+            font-weight: bold;
+        }
 }
 
 
