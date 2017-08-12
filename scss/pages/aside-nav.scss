@@ -1,0 +1,32 @@
+
+//боковая фиксированная панель навигации
+//расположение панели навигации
+.aside-nav{
+    position: fixed;
+    top: 90px;
+    right: 50px;
+    z-index: 100;
+}
+//оформление кружков
+.aside-nav__item{
+    padding: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+    border: 1px solid transparent;
+        .aside-nav__link{
+            display: block;
+            background-color: #fff;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+        &_active{
+            border: 1px solid #fff;
+        }
+        &:hover{
+            border: 1px solid #fff;
+        }
+}
+
