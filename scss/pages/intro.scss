@@ -46,6 +46,9 @@
     font-family: "Ubuntu-Medium";
     font-size: 13px;
     text-transform: uppercase;
+        &:hover{
+            font-weight: bold;
+        }
 }
 .order-link{
     padding: 10px 17px;
