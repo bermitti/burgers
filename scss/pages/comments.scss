@@ -23,38 +23,38 @@
 
 .comments-list{
     font-size: 0; /*убрал отступ между блоками inline-block*/
-        &__img1{
-            background: url(../img/comments/12.png) center;
-            background-size: cover;
-        }
-        &__img2{
-            background: url(../img/comments/2.png) center;
-            background-size: cover;
-        }
-        &__img3{
-            background: url(../img/comments/3.png) center;
-            background-size: cover;
-        }
-        &__img4{
-            background: url(../img/comments/4.png) center;
-            background-size: cover;
-        }
-        &__img5{
-            background: url(../img/comments/5.png) center;
-            background-size: cover;
-        }
-        &__img6{
-            background: url(../img/comments/6.png) center;
-            background-size: cover;
-        }
-        &__img7{
-            background: url(../img/comments/7.png) center;
-            background-size: cover;
-        }
-        &__img8{
-            background: url(../img/comments/8.png) center;
-            background-size: cover;
-        }
+    &__img1{
+        background: url(../img/comments/12.png) center;
+        background-size: cover;
+    }
+    &__img2{
+        background: url(../img/comments/2.png) center;
+        background-size: cover;
+    }
+    &__img3{
+        background: url(../img/comments/3.png) center;
+        background-size: cover;
+    }
+    &__img4{
+        background: url(../img/comments/4.png) center;
+        background-size: cover;
+    }
+    &__img5{
+        background: url(../img/comments/5.png) center;
+        background-size: cover;
+    }
+    &__img6{
+        background: url(../img/comments/6.png) center;
+        background-size: cover;
+    }
+    &__img7{
+        background: url(../img/comments/7.png) center;
+        background-size: cover;
+    }
+    &__img8{
+        background: url(../img/comments/8.png) center;
+        background-size: cover;
+    }
 }
 
 //всплывающий комментарий
