@@ -2,7 +2,7 @@
 .order{
     background: url(../img/bg/bg-order-texture.png) center center no-repeat;
     background-size: cover;
-    padding-top: 90px;
+    padding-top: 65px;
     font-family: "Ubuntu-Light"; //шрифт на странице
     font-size: 14px;
     color: white;
@@ -10,7 +10,7 @@
 //заголовок
 .order__title{
     text-align: center;
-    margin-bottom: 90px;
+    margin-bottom: 65px;
     font-family: 'Gagalin-Regular'; //вынести как .title1 в base
     font-size: 72px;   //вынести как .title1 в base
     color: #f9b43b;  //вынести как .title1 в base
@@ -27,7 +27,7 @@
 }
 .form__row{
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 // расположение поля и надписи в первой колонке flex
 .form__label-wrapper{
@@ -97,7 +97,7 @@
     display: inline-block;
     font-size: 16px;
     line-height: 1;
-    padding: 5px 10px;
+    padding: 9px;
     border-radius: 05px;
     text-transform: uppercase;
     color: #fff;

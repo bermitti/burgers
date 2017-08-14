@@ -10,9 +10,15 @@
     display: flex; /*задали flex*/
     align-items: center; /*flex центровка внутренних блоков по вертикали*/
     justify-content: space-between; /*flex выравниваем блоки внутри*/
-    margin-bottom: 10px;
         &__logo{
             margin-right: auto; /*flex оттолкнул все блоки вправо*/
+            padding-top: 5px; //почему? отцентровал флексами и привёл к pixel perfect
+        }
+        &__menu{
+            margin-top: -8px; //почему? отцентровал флексами и привёл к pixel perfect отриц.маржином
+        }
+        &__btn{
+            margin-top: -3px; //почему? отцентровал флексами и привёл к pixel perfect отриц.маржином
         }
 }
 
@@ -33,7 +39,7 @@
             margin: 0 12px; /*ставим по центру между li*/
         }
         &:last-child{
-            margin-right: 12px; /*поставил отступ после крайней  li*/
+            margin-right: 15px; /*поставил отступ после крайней  li*/
                 &:after{
                     display: none; /*убрал точку после крайней  li*/
                 }
@@ -50,8 +56,9 @@
             font-weight: bold;
         }
 }
+//кнопка заказать
 .order-link{
-    padding: 10px 17px;
+    padding: 8px 15px;
     border-radius: 5px;
     background-color: #e45028;
     color: #fff;
@@ -69,25 +76,34 @@
     display: flex;
     align-items: center; /*flex центровка внутренних блоков по вертикали*/
 }
+//картинка бургер
 .intro__drops{
     width: 50%;
+    padding-left: 15px;  //почему? привёл к pixel perfect
+}
+.intro__img{
+    margin-top: -11px;  //почему? привёл к pixel perfect
 }
 .intro__description{
     width: 50%;
+    padding-top: 55px;   //почему? привёл к pixel perfect
+    padding-left: 10px;  //почему? привёл к pixel perfect
+    &-title{
+        font-family: "Gagalin-Regular";
+        font-size: 72px;
+        line-height: 85px;
+        color: #f9b43b;
+    }
+    &-text{
+        padding-top: 20px;
+        font-family: "Lifehack-Medium";
+        font-size: 65px;
+        line-height: 62px;
+        color: #ffffff;
+        letter-spacing: -1px;
+    }
 }
-.intro__description-title{
-    font-family: "Gagalin-Regular";
-    font-size: 72px;
-    line-height: 85px;
-    color: #f9b43b;
-}
-.intro__description-text{
-    font-family: "Lifehack-Medium";
-    font-size: 65px;
-    line-height: 62px;
-    color: #ffffff;
-    letter-spacing: -2px;
-}
+
 .intro-arrow{
     margin-top: 60px;
     text-align: center;

@@ -11,7 +11,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 50%;
+    width: 49%;  //почему? привёл к pixel perfect
     background: rgba(50, 52, 54, 0.9);
     display: flex;
     justify-content: center;
@@ -20,7 +20,8 @@
 
 .team__content {
     width: 70.37037%;
-    padding-top: 60px; 
+    padding-top: 63px; 
+    padding-left: 5px;  //почему? привёл к pixel perfect
 }
 
 .team__title {
@@ -35,19 +36,18 @@
     flex-direction: column;
     overflow: hidden;
     margin-bottom: 20px; 
-
-        &.active{
-            .team-accordeon__title {
-                color: #f9b43b; 
-
-                    &:before {
-                        transform: rotate(180deg); 
-                    }
-            }
-            .team-accordeon__content {
-                height: auto; 
+    &.active{
+        margin-bottom: 25px;    //почему? привёл к pixel perfect
+        .team-accordeon__title {
+            color: #f9b43b; 
+            &:before {
+                transform: rotate(180deg); 
             }
         }
+        .team-accordeon__content {
+            height: auto; 
+        }
+    }
 }
 
 .team-accordeon__title {
@@ -95,7 +95,7 @@
 .team-accordeon__description {
     margin-left: 20px;
     padding-top: 2px;
-    padding-right: 20px; 
+    padding-right: 5px;   //почему? привёл к pixel perfect
 }
 
 .team-accordeon__desc-occupation {

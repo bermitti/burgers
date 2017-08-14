@@ -3,8 +3,8 @@
 //расположение панели навигации
 .aside-nav{
     position: fixed;
-    top: 90px;
-    right: 50px;
+    top: 93px;  //почему?  привёл к pixel perfect 
+    right: 20px;
     z-index: 100;
 }
 //оформление кружков
