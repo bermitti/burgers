@@ -224,6 +224,211 @@ a {
   line-height: 24.05px;
   color: #2f3234; }
 
+.burgers {
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(40%, #eb8c38), color-stop(60%, #f19e39), color-stop(80%, #eb8e38), to(#f9b33b));
+  background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8c38 40%, #f19e39 60%, #eb8e38 80%, #f9b33b 100%);
+  background: -o-linear-gradient(top, #f9b43b 0%, #eb8c38 40%, #f19e39 60%, #eb8e38 80%, #f9b33b 100%);
+  background: linear-gradient(180deg, #f9b43b 0%, #eb8c38 40%, #f19e39 60%, #eb8e38 80%, #f9b33b 100%); }
+
+.burger-slider-wrap {
+  position: relative;
+  padding: 20px 0;
+  border: 1px solid red; }
+
+.burger-slider__controls {
+  border: 1px solid green; }
+
+.burger-slider__btn_prev {
+  border: 1px solid yellow; }
+
+.burger-slider__btn_next {
+  border: 1px solid blue;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 15px;
+  height: 30px;
+  fill: black;
+  z-index: 2; }
+
+.burger-slider-item {
+  position: relative;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+
+.ingredients {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(227, 80, 40, 0.4);
+  width: 90px;
+  height: 90px;
+  border-radius: .5px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .ingredients__icon {
+    width: 100%;
+    height: 60%;
+    fill: #fff; }
+    .ingredients__icon-text {
+      color: #fff;
+      font-size: 14px;
+      font-family: 'Gagalin';
+      text-align: center; }
+
+.ingredients__dropdown {
+  position: absolute;
+  left: 90px;
+  padding: 20px;
+  background: #fef8ec;
+  opacity: 0.9;
+  width: 270px;
+  border-radius: 5px;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  z-index: 1;
+  top: 0; }
+
+.burger-weight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5; }
+  .burger-weight__wrap {
+    background: url(../img/burgers-slider/kkal.svg) 50% no-repeat;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    background-size: contain; }
+    .burger-weight__wrap-amount {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+      font-family: "Gagalin-Regular";
+      font-size: 20px;
+      color: #fff;
+      text-align: center; }
+  .burger-weight__measure {
+    font-family: "Gagalin-Regular";
+    font-size: 14px;
+    color: #fff;
+    text-align: center; }
+
+.burgers-slider__item {
+  position: relative;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.burgers-slider__left {
+  text-align: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.burgers-slider__right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+  .burgers-slider__right-title {
+    font-family: "Gagalin-Regular";
+    font-size: 72px;
+    line-height: 64px;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 45px; }
+  .burgers-slider__right-text {
+    font-family: 'Ubuntu-Light';
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 20px; }
+
+.burgers-slider__price {
+  display: inline-block;
+  vertical-align: middle;
+  color: #e35028;
+  font-family: 'Gagalin-Regular'; }
+  .burgers-slider__price-amount {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 72px;
+    line-height: 1; }
+  .burgers-slider__price-measure {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 30px;
+    line-height: 1; }
+
+.burgers-slider__right-buy {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 30px;
+  background: #e45028;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px 13px;
+  font-family: 'Ubuntu-Light'; }
+
 .team {
   background: url("../img/bg/bg-team.png") center center no-repeat;
   background-size: cover;
