@@ -12,29 +12,45 @@
 .burger-slider-wrap{
     position: relative;
     padding: 20px 0;
-    border: 1px solid red;
 }
 
+//  плагину передать контейнер в который поместить контроллы
+// .burger-slider__controls{
+//     border: 1px solid green;
+// }
 
-.burger-slider__controls{
-    border: 1px solid green;
-}
 .burger-slider__btn_prev{
-    border: 1px solid yellow;
-}
-.burger-slider__btn_next{
-    border: 1px solid blue;
+    // border: 1px solid yellow;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 30px;
+    left: -30px;
+    transform: rotate(90deg);
+    width: 30px;
+    height: 20px;
+    fill: #fff;
+    z-index: 2;
+}
+.burger-slider__btn_next{
+    // border: 1px solid blue; 
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: rotate(-90deg);
+    width: 30px;
+    height: 20px;
     fill: black;
     z-index: 2;
 }
 
+//ul - слайды в ряд
+.burgers-slider{
+    display: flex;
+    overflow: hidden; //прячу лишние слайды
+}
+    
 
 .burger-slider-item{
+    width: 940px;
     position: relative;
     padding-bottom: 50px;
     display: flex;
