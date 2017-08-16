@@ -1031,7 +1031,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(47, 50, 52, 0.99);
+  background: #2f3234;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -1045,7 +1045,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  opacity: 0.9;
+  opacity: 0.95;
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
   transition: opacity .3s; }

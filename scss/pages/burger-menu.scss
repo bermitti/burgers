@@ -5,12 +5,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(47,50,52,.99);
+    background: #2f3234;
     align-items: center;
     justify-content: center;
     z-index: 99;
     display: flex;
-    opacity: 0.9;
+    opacity: 0.95;
     transition: opacity .3s;
     &__logo{
         position: absolute;
