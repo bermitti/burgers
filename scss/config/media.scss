@@ -1,0 +1,29 @@
+// desktop  75rem
+@mixin laptop {
+    @media (max-width: $laptop) { 
+        @content;
+    }
+}
+
+ // laptop 62rem
+@mixin desktop {
+    @media screen and (max-width: $desktop) { 
+        @content;
+    }
+}
+
+// tablets  48rem
+@mixin tablets {
+    @media screen and (max-width: $tablets) { 
+        @content;
+    }
+}
+
+// phones  30rem
+@mixin phones {
+    @media screen and (max-width: $phones) { 
+        @content;
+    }
+}
+
+

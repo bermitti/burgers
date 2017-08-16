@@ -12,6 +12,7 @@
 .burger-slider-wrap{
     position: relative;
     padding: 20px 0;
+    overflow: hidden; //прячу лишние слайды
 }
 
 //  плагину передать контейнер в который поместить контроллы
@@ -45,6 +46,7 @@
 //ul - слайды в ряд
 .burgers-slider{
     display: flex;
+    width: 4700px;
     overflow: hidden; //прячу лишние слайды
 }
     

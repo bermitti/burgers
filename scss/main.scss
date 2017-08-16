@@ -1,7 +1,19 @@
+// colors
+
+// resolution
+$desctop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+// normalize
+
+// media
+@import "config/media";
 
 // Config 
 //@import "config/_variables";
-//@import "config/_mixins";
+@import "config/mixins"; //так как тут функция пересчёта, обязательно как можно выше подключаем
 
 // Base
 @import "layout/fonts";
@@ -17,8 +29,11 @@
 @import 'pages/order';
 @import 'pages/map';
 @import 'pages/aside-nav';
+@import 'pages/intro-menu';
 
 
+//types
+@import 'types/adaptive';
 
 
 //@import '';

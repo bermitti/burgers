@@ -6,19 +6,24 @@
 }
 .header{
     /* border: 1px solid red; */
-    padding-top: 10px;
+    padding-top: rem(10px);
     display: flex; /*задали flex*/
     align-items: center; /*flex центровка внутренних блоков по вертикали*/
     justify-content: space-between; /*flex выравниваем блоки внутри*/
         &__logo{
             margin-right: auto; /*flex оттолкнул все блоки вправо*/
-            padding-top: 5px; //почему? отцентровал флексами и привёл к pixel perfect
+            padding-top: rem(5px); //почему? отцентровал флексами и привёл к pixel perfect
         }
         &__menu{
-            margin-top: -8px; //почему? отцентровал флексами и привёл к pixel perfect отриц.маржином
+            margin-top: rem(-8px); //почему? отцентровал флексами и привёл к pixel perfect отриц.маржином
+            @include tablets{
+                display: none;  //убрал для планшетов
+            }
         }
         &__btn{
-            margin-top: -3px; //почему? отцентровал флексами и привёл к pixel perfect отриц.маржином
+            display: flex;
+            align-items: center;
+            margin-top: rem(-3px); //почему? отцентровал флексами и привёл к pixel perfect отриц.маржином
         }
 }
 
@@ -32,14 +37,14 @@
             display: inline-block; /*рисуем точки после li*/
             vertical-align: middle;
             content: ' ';
-            width: 3px;
-            height: 3px;
-            border-radius: 1.5px;
+            width: rem(3px);
+            height: rem(3px);
+            border-radius: rem(1.5px);
             background-color: #fff;
-            margin: 0 12px; /*ставим по центру между li*/
+            margin: 0 rem(12px); /*ставим по центру между li*/
         }
         &:last-child{
-            margin-right: 15px; /*поставил отступ после крайней  li*/
+            margin-right: rem(15px); /*поставил отступ после крайней  li*/
                 &:after{
                     display: none; /*убрал точку после крайней  li*/
                 }
@@ -50,7 +55,7 @@
 
 .nav__link{
     font-family: "Ubuntu-Medium";
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
         &:hover{
             font-weight: bold;
@@ -58,13 +63,13 @@
 }
 //кнопка заказать
 .order-link{
-    padding: 8px 15px;
-    border-radius: 5px;
+    padding: rem(8px) rem(15px);
+    border-radius: rem(5px);
     background-color: #e45028;
     color: #fff;
     text-decoration: none;
     font-family: "Ubuntu-Medium";
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
     transition: 1s;
         &:hover{
@@ -79,33 +84,37 @@
 //картинка бургер
 .intro__drops{
     width: 50%;
-    padding-left: 15px;  //почему? привёл к pixel perfect
+    padding-left: rem(15px);  //почему? привёл к pixel perfect
 }
 .intro__img{
-    margin-top: -11px;  //почему? привёл к pixel perfect
+    margin-top: rem(-11px);  //почему? привёл к pixel perfect
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
 }
 .intro__description{
     width: 50%;
-    padding-top: 55px;   //почему? привёл к pixel perfect
-    padding-left: 10px;  //почему? привёл к pixel perfect
+    padding-top: rem(55px);   //почему? привёл к pixel perfect
+    padding-left: rem(10px);  //почему? привёл к pixel perfect
     &-title{
         font-family: "Gagalin-Regular";
-        font-size: 72px;
-        line-height: 85px;
+        font-size: rem(72px);
+        line-height: rem(85px);
         color: #f9b43b;
     }
     &-text{
-        padding-top: 20px;
+        padding-top: rem(20px);
         font-family: "Lifehack-Medium";
-        font-size: 65px;
-        line-height: 62px;
+        font-size: rem(65px);
+        line-height: rem(62px);
         color: #ffffff;
-        letter-spacing: -1px;
+        letter-spacing: rem(-1px);
     }
 }
 
 .intro-arrow{
-    margin-top: 60px;
+    margin-top: rem(60px);
     text-align: center;
 }
 

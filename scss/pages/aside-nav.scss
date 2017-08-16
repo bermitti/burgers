@@ -3,8 +3,8 @@
 //расположение панели навигации
 .aside-nav{
     position: fixed;
-    top: 93px;  //почему?  привёл к pixel perfect 
-    right: 20px;
+    top: rem(93px);  //почему?  привёл к pixel perfect 
+    right: rem(20px);
     z-index: 100;
 }
 //оформление кружков
@@ -18,15 +18,15 @@
         .aside-nav__link{
             display: block;
             background-color: #fff;
-            width: 6px;
-            height: 6px;
+            width: rem(6px);
+            height: rem(6px);
             border-radius: 50%;
         }
         &_active{
-            border: 1px solid #fff;
+            border: rem(1px) solid #fff;
         }
         &:hover{
-            border: 1px solid #fff;
+            border: rem(1px) solid #fff;
         }
 }
 

@@ -1,0 +1,39 @@
+
+.intro-menu-link{
+    vertical-align: middle;
+    position: relative;
+    height: rem(20px);
+    align-items: center;
+    margin-left: rem(20px);
+    display: none;
+    @include tablets{
+        display: inline-flex;
+    }
+}
+
+.intro-menu-link__bars{
+    background: #fff;
+    width: rem(22px);
+    height: rem(4px);
+    border-radius: rem(2px);
+    &:before{
+        content: "";
+        background: #fff;
+        width: rem(22px);
+        height: rem(4px);
+        border-radius: rem(2px);
+        display: block;
+        position: absolute;
+        top: 1px;
+    }
+    &:after{
+        content: "";
+        background: #fff;
+        width: rem(22px);
+        height: rem(4px);
+        border-radius: rem(2px);
+        display: block;
+        position: absolute;
+        bottom: 1px;
+    }    
+}
