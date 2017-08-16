@@ -2,8 +2,9 @@
     background: url(../img/bg/video-bg.png) center center no-repeat;
     background-size: cover;
     min-width: initial;
-    position: relative;
+    position: relative; // родитель для стрелки внизу
 }
+
 .header{
     /* border: 1px solid red; */
     padding-top: rem(10px);
@@ -79,12 +80,18 @@
 
 .intro__content{
     display: flex;
+    justify-content: center;
     align-items: center; /*flex центровка внутренних блоков по вертикали*/
 }
 //картинка бургер
 .intro__drops{
     width: 50%;
     padding-left: rem(15px);  //почему? привёл к pixel perfect
+    @include tablets{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 .intro__img{
     margin-top: rem(-11px);  //почему? привёл к pixel perfect
@@ -104,6 +111,7 @@
         color: #f9b43b;
     }
     &-text{
+        display: inline-block;
         padding-top: rem(20px);
         font-family: "Lifehack-Medium";
         font-size: rem(65px);
@@ -111,10 +119,24 @@
         color: #ffffff;
         letter-spacing: rem(-1px);
     }
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
 }
 
 .intro-arrow{
-    margin-top: rem(60px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: rem(50px);
     text-align: center;
 }
 
+.intro-arrow__icon{
+    height: rem(20px);
+    width: rem(35px);
+    fill: red;
+}

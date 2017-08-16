@@ -1,18 +1,18 @@
 .best{
     background: url(../img/bg/bestImg.png) center center no-repeat;
     background-size: cover; /*растягиваем на всю ширину окна*/
-    padding-top: 70px;
-    padding-bottom: 20px;
+    padding-top: rem(70px);
+    padding-bottom: rem(20px);
 }
 
 .best__title{
     font-family: "Gagalin-Regular";
-    font-size: 72px;
-    line-height: 64px;
+    font-size: rem(72px);
+    line-height: rem(64px);
     color: #2f3234;
     text-align: center;
-    // padding-top: 70px; 
-    margin-bottom: 85px;
+    // padding-top: rem(70px); 
+    margin-bottom: rem(85px);
 }
 .best-list__item{
     display: inline-block;
@@ -21,17 +21,17 @@
     width: 33%;
 }
 .best-list__img{
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
 .best-list__title{
     font-family: "Lifehack-Medium";
-    font-size: 24.1px;
+    font-size: rem(24.1px);
     color: #2f3234;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
 }
 .best-list__description{
     font-family: "Ubuntu-Light";
-    font-size: 14.03px;
-    line-height: 24.05px;
+    font-size: rem(14.03px);
+    line-height: rem(24.05px);
     color: #2f3234;
 }

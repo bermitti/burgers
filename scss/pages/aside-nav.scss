@@ -6,6 +6,9 @@
     top: rem(93px);  //почему?  привёл к pixel perfect 
     right: rem(20px);
     z-index: 100;
+    @include tablets{
+        display: none;
+    }
 }
 //оформление кружков
 .aside-nav__item{

@@ -1,4 +1,4 @@
-
+//серое dcgksdf.ott меню для телефона при разрешении 480px
 .humburger-menu{
     position: fixed;
     top: 0;
@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     z-index: 99;
-    display: flex;
+    display: none;
     opacity: 0.95;
     transition: opacity .3s;
     &__logo{
@@ -24,6 +24,9 @@
     }
     &__close-icon{
         fill: #fff;
+    }
+    @include phones{
+        display: flex;
     }
 }
 .nav-humburger__item{

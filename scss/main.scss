@@ -29,13 +29,15 @@ $phones: 480px;
 @import 'pages/order';
 @import 'pages/map';
 @import 'pages/aside-nav';
-@import 'pages/intro-menu';
-@import 'pages/burger-menu';
+@import 'pages/intro-menu';  //меню - три полоски, для малого разрешения экрана
+@import 'pages/burger-menu'; //серое всплывающее меню для телефона при разрешении 480px
 
 
-//types
-@import 'types/adaptive';
+// //types
+// @import 'types/adaptive';
 
 
-//@import '';
+// //@import '';
 
+// @include tablets
+// @include phones

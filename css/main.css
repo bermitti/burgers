@@ -167,6 +167,10 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -176,6 +180,20 @@ a {
 .intro__drops {
   width: 50%;
   padding-left: 0.9375rem; }
+  @media screen and (max-width: 768px) {
+    .intro__drops {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .intro__img {
   margin-top: -0.6875rem;
@@ -194,31 +212,56 @@ a {
     line-height: 5.3125rem;
     color: #f9b43b; }
   .intro__description-text {
+    display: inline-block;
     padding-top: 1.25rem;
     font-family: "Lifehack-Medium";
     font-size: 4.0625rem;
     line-height: 3.875rem;
     color: #ffffff;
     letter-spacing: -0.0625rem; }
+  @media screen and (max-width: 768px) {
+    .intro__description {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center; } }
 
 .intro-arrow {
-  margin-top: 3.75rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3.125rem;
   text-align: center; }
+
+.intro-arrow__icon {
+  height: 1.25rem;
+  width: 2.1875rem;
+  fill: red; }
 
 .best {
   background: url(../img/bg/bestImg.png) center center no-repeat;
   background-size: cover;
   /*растягиваем на всю ширину окна*/
-  padding-top: 70px;
-  padding-bottom: 20px; }
+  padding-top: 4.375rem;
+  padding-bottom: 1.25rem; }
 
 .best__title {
   font-family: "Gagalin-Regular";
-  font-size: 72px;
-  line-height: 64px;
+  font-size: 4.5rem;
+  line-height: 4rem;
   color: #2f3234;
   text-align: center;
-  margin-bottom: 85px; }
+  margin-bottom: 5.3125rem; }
 
 .best-list__item {
   display: inline-block;
@@ -228,18 +271,18 @@ a {
   width: 33%; }
 
 .best-list__img {
-  margin-bottom: 30px; }
+  margin-bottom: 1.875rem; }
 
 .best-list__title {
   font-family: "Lifehack-Medium";
-  font-size: 24.1px;
+  font-size: 1.50625rem;
   color: #2f3234;
-  margin-bottom: 10px; }
+  margin-bottom: 0.625rem; }
 
 .best-list__description {
   font-family: "Ubuntu-Light";
-  font-size: 14.03px;
-  line-height: 24.05px;
+  font-size: 0.87687rem;
+  line-height: 1.50313rem;
   color: #2f3234; }
 
 .burgers {
@@ -965,6 +1008,9 @@ a {
   top: 5.8125rem;
   right: 1.25rem;
   z-index: 100; }
+  @media screen and (max-width: 768px) {
+    .aside-nav {
+      display: none; } }
 
 .aside-nav__item {
   padding: 4px;
@@ -1041,10 +1087,7 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
   z-index: 99;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   opacity: 0.95;
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
@@ -1059,6 +1102,12 @@ a {
     right: 1.25rem; }
   .humburger-menu__close-icon {
     fill: #fff; }
+  @media screen and (max-width: 480px) {
+    .humburger-menu {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .nav-humburger__item {
   display: -webkit-box;
@@ -1099,39 +1148,3 @@ a {
 .nav-humburger__link {
   font-family: 'Gagalin-Regular';
   font-size: 1.5rem; }
-
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 16px; }
-  .container {
-    width: 60.625rem; } }
-
-@media (max-width: 992px) {
-  html {
-    font-size: 15px; }
-  .container {
-    width: 46.875rem; } }
-
-@media (max-width: 768px) {
-  html {
-    font-size: 14px; }
-  .container {
-    width: 30rem; }
-  .aside-nav {
-    display: none; }
-  .intro__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .intro__drops, .intro__description {
-    width: 100%; }
-  .intro__img {
-    max-width: 85%; } }
-
-@media (max-width: 480px) {
-  html {
-    font-size: 12px; }
-  .container {
-    width: 95%; } }

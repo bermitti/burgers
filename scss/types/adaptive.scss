@@ -4,7 +4,8 @@
         font-size: 16px;
     }
     .container {
-        width: rem(970px);
+        min-width: rem(970px);
+        width: 95%;
     }
 }
 @media (max-width: 992px) { // laptop 62rem
@@ -12,7 +13,8 @@
     font-size: 15px;
     }
     .container {
-        width: rem(750px);
+        min-width: rem(750px);
+        width: 95%;
     }
 }
 @media (max-width: 768px) { // tablets  48rem
@@ -20,7 +22,8 @@
     font-size: 14px;
     }
     .container {
-        width: rem(480px);
+        min-width: rem(480px);
+        width: 95%;
     }
     .aside-nav{
         display: none;
