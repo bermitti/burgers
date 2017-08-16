@@ -32,7 +32,8 @@ body {
   font-family: 'Ubuntu';
   font-weight: 300;
   font-size: 0.875rem;
-  line-height: 1.42; }
+  line-height: 1.42;
+  position: relative; }
 
 .wrapper {
   min-height: 100%;
@@ -1023,6 +1024,81 @@ a {
     display: block;
     position: absolute;
     bottom: 1px; }
+
+.humburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(47, 50, 52, 0.99);
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 99;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.9;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s; }
+  .humburger-menu__logo {
+    position: absolute;
+    top: 0.625rem;
+    left: 1.25rem; }
+  .humburger-menu__close {
+    position: absolute;
+    top: 1.875rem;
+    right: 1.25rem; }
+  .humburger-menu__close-icon {
+    fill: #fff; }
+
+.nav-humburger__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .nav-humburger__item:after {
+    display: inline-block;
+    /*рисуем точки после li*/
+    vertical-align: middle;
+    content: '';
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 0.1875rem;
+    background-color: #fff;
+    margin: 0 0.75rem;
+    /*ставим по центру между li*/ }
+  .nav-humburger__item:last-child {
+    margin-right: 0.9375rem;
+    /*поставил отступ после крайней  li*/ }
+    .nav-humburger__item:last-child:after {
+      display: none;
+      /*убрал точку после крайней  li*/ }
+
+.nav-humburger__link {
+  font-family: 'Gagalin-Regular';
+  font-size: 1.5rem; }
 
 @media screen and (max-width: 1200px) {
   html {

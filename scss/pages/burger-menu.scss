@@ -1,0 +1,55 @@
+
+.humburger-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(47,50,52,.99);
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    display: flex;
+    opacity: 0.9;
+    transition: opacity .3s;
+    &__logo{
+        position: absolute;
+        top: rem(10px);
+        left: rem(20px);
+    }
+    &__close{
+        position: absolute;
+        top: rem(30px);
+        right: rem(20px);
+    }
+    &__close-icon{
+        fill: #fff;
+    }
+}
+.nav-humburger__item{
+    display: flex;;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:after{
+        display: inline-block; /*рисуем точки после li*/
+        vertical-align: middle;
+        content: '';
+        width: rem(6px);
+        height: rem(6px);
+        border-radius: rem(3px);
+        background-color: #fff;
+        margin: 0 rem(12px); /*ставим по центру между li*/
+    }
+    &:last-child{
+        margin-right: rem(15px); /*поставил отступ после крайней  li*/
+            &:after{
+                display: none; /*убрал точку после крайней  li*/
+            }
+    }
+}
+
+.nav-humburger__link{
+    font-family: 'Gagalin-Regular';
+    font-size: rem(24px);
+}

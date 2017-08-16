@@ -9,6 +9,7 @@ body {
     font-weight: 300;
     font-size: rem(14px);
     line-height: 1.42;
+    position: relative;
 }
 .wrapper {
     min-height: 100%;
@@ -48,6 +49,6 @@ a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 480px){
+// @media screen and (max-width: 480px){
 
-}
+// }
