@@ -43,6 +43,9 @@ body {
 .container {
   max-width: 58.75rem;
   margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 95%; } }
 
 ul {
   margin: 0;
@@ -176,6 +179,13 @@ a {
   -ms-flex-align: center;
   align-items: center;
   /*flex центровка внутренних блоков по вертикали*/ }
+  @media screen and (max-width: 768px) {
+    .intro__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .intro__drops {
   width: 50%;
@@ -193,7 +203,8 @@ a {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
-      justify-content: center; } }
+      justify-content: center;
+      width: 100%; } }
 
 .intro__img {
   margin-top: -0.6875rem;
@@ -234,7 +245,8 @@ a {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center;
-      text-align: center; } }
+      text-align: center;
+      width: 100%; } }
 
 .intro-arrow {
   position: absolute;
@@ -269,6 +281,9 @@ a {
   /*блоки в li по верху*/
   text-align: center;
   width: 33%; }
+  @media screen and (max-width: 768px) {
+    .best-list__item {
+      display: block; } }
 
 .best-list__img {
   margin-bottom: 1.875rem; }
