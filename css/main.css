@@ -46,7 +46,7 @@ body {
   margin: 0 auto; }
   @media screen and (max-width: 768px) {
     .container {
-      width: 95%; } }
+      width: 90%; } }
 
 ul {
   margin: 0;
@@ -429,6 +429,11 @@ a {
   bottom: 0;
   left: 0;
   opacity: 0.5; }
+  @media screen and (max-width: 768px) {
+    .burger-weight {
+      position: absolute;
+      top: 0;
+      right: 0; } }
   .burger-weight__wrap {
     background: url(../img/burgers-slider/kkal.svg) 50% no-repeat;
     width: 60px;
