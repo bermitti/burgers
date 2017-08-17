@@ -358,7 +358,7 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
-.burger-slider-item {
+.burgers-slider__item {
   width: 940px;
   position: relative;
   padding-bottom: 60px;
@@ -367,7 +367,7 @@ a {
   display: -ms-flexbox;
   display: flex; }
   @media screen and (max-width: 768px) {
-    .burger-slider-item {
+    .burgers-slider__item {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -492,6 +492,9 @@ a {
     font-size: 14px;
     color: #fff;
     margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      .burgers-slider__right-text {
+        text-align: center; } }
   @media screen and (max-width: 768px) {
     .burgers-slider__right {
       padding-left: 10%;
