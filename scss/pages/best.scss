@@ -14,6 +14,9 @@
     text-align: center;
     margin-bottom: rem(85px);
 }
+.best-list__wrapper{
+    text-align: center;
+}
 .best-list__item{
     display: inline-block;
     vertical-align: top; /*блоки в li по верху*/
@@ -21,10 +24,24 @@
     width: 32%;
     @include phones{
         display: block;
+        width: 100%;
+        margin-bottom: rem(20px);
     }
 }
 .best-list__img{
     margin-bottom: rem(30px);
+    @include phones{
+        display: inline-block;
+        margin-right: rem(20px);
+    }
+}
+.best-list__desc{
+    @include phones{
+        text-align: left;
+        display: inline-block;
+        width: 65%;
+    }
+
 }
 .best-list__title{
     font-family: "Lifehack-Medium";

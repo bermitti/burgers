@@ -20,6 +20,9 @@
 // оформление форм
 .form{
     display: flex;
+    @include tablets{
+        flex-direction: column;
+    }
 }
 // оформление расположения колоннок
 .form__col{

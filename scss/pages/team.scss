@@ -6,6 +6,12 @@
     min-width: initial;
 }
 
+.team__content {
+    width: 70.37037%;
+    padding-top: 63px; 
+    padding-left: 5px;  //почему? привёл к pixel perfect
+}
+
 .team__container {
     position: absolute;
     top: 0;
@@ -16,24 +22,29 @@
     display: flex;
     justify-content: center;
     align-content: center; 
-}
-
-.team__content {
-    width: 70.37037%;
-    padding-top: 63px; 
-    padding-left: 5px;  //почему? привёл к pixel perfect
+    @include tablets{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%
+    }
 }
 
 .team__title {
     font-family: 'Gagalin-Regular';
     font-size: 72px;
     color: #f9b43b;
-    margin-bottom: 63px; 
+    margin-bottom: 63px;
+    text-align: center; 
 }
 
 .team-accordeon__item {
     display: flex;
     flex-direction: column;
+    align-items: center;
     overflow: hidden;
     margin-bottom: 20px; 
     &.active{
@@ -74,6 +85,10 @@
     height: 0; //прячем контент аккордеона
     display: flex;
     flex-direction: row; 
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .team-accordeon__avatar {
@@ -106,6 +121,7 @@
     letter-spacing: 1px;
     color: #fff;
     margin-bottom: 10px; 
+    text-align: center;
 }
 
 .team-accordeon__desc-text {
@@ -114,4 +130,5 @@
     line-height: 24px;
     color: #fff;
     margin-bottom: 10px; 
+    text-align: center;
 }

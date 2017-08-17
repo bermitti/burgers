@@ -104,9 +104,10 @@
     left: 0;
     opacity: 0.5;
     @include tablets{
-        position: absolute;
         top: 0;
         right: 0;
+        bottom: auto;  // без этих значений сво-ва не переписывается
+        left: auto;    // без этих значений сво-ва не переписывается
     }
     &__wrap{
         background: url(../img/burgers-slider/kkal.svg) 50% no-repeat;

@@ -277,6 +277,9 @@ a {
   text-align: center;
   margin-bottom: 5.3125rem; }
 
+.best-list__wrapper {
+  text-align: center; }
+
 .best-list__item {
   display: inline-block;
   vertical-align: top;
@@ -285,10 +288,22 @@ a {
   width: 32%; }
   @media screen and (max-width: 480px) {
     .best-list__item {
-      display: block; } }
+      display: block;
+      width: 100%;
+      margin-bottom: 1.25rem; } }
 
 .best-list__img {
   margin-bottom: 1.875rem; }
+  @media screen and (max-width: 480px) {
+    .best-list__img {
+      display: inline-block;
+      margin-right: 1.25rem; } }
+
+@media screen and (max-width: 480px) {
+  .best-list__desc {
+    text-align: left;
+    display: inline-block;
+    width: 65%; } }
 
 .best-list__title {
   font-family: "Lifehack-Medium";
@@ -431,9 +446,10 @@ a {
   opacity: 0.5; }
   @media screen and (max-width: 768px) {
     .burger-weight {
-      position: absolute;
       top: 0;
-      right: 0; } }
+      right: 0;
+      bottom: auto;
+      left: auto; } }
   .burger-weight__wrap {
     background: url(../img/burgers-slider/kkal.svg) 50% no-repeat;
     width: 60px;
@@ -542,6 +558,11 @@ a {
   height: 100vh;
   min-width: initial; }
 
+.team__content {
+  width: 70.37037%;
+  padding-top: 63px;
+  padding-left: 5px; }
+
 .team__container {
   position: absolute;
   top: 0;
@@ -560,17 +581,22 @@ a {
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center; }
-
-.team__content {
-  width: 70.37037%;
-  padding-top: 63px;
-  padding-left: 5px; }
+  @media screen and (max-width: 768px) {
+    .team__container {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%; } }
 
 .team__title {
   font-family: 'Gagalin-Regular';
   font-size: 72px;
   color: #f9b43b;
-  margin-bottom: 63px; }
+  margin-bottom: 63px;
+  text-align: center; }
 
 .team-accordeon__item {
   display: -webkit-box;
@@ -582,6 +608,10 @@ a {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   overflow: hidden;
   margin-bottom: 20px; }
   .team-accordeon__item.active {
@@ -630,6 +660,17 @@ a {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row; }
+  @media screen and (max-width: 768px) {
+    .team-accordeon__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .team-accordeon__avatar {
   width: 100px;
@@ -659,14 +700,16 @@ a {
   line-height: 1;
   letter-spacing: 1px;
   color: #fff;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-align: center; }
 
 .team-accordeon__desc-text {
   font-family: 'Ubuntu-Light';
   font-size: 14px;
   line-height: 24px;
   color: #fff;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-align: center; }
 
 .food-menu {
   background: url("../img/bg/bg-food-menu.png") center center no-repeat;
@@ -746,19 +789,26 @@ a {
 .comments {
   height: 100vh;
   min-height: 650px;
-  background-color: rgba(0, 0, 0, 0.31);
-  min-width: 100vw; }
+  background-color: rgba(0, 0, 0, 0.31); }
+
+.comments-list {
+  width: 100%;
+  height: 100%; }
 
 .comments-list__item {
   display: inline-block;
-  min-height: 50vh;
-  width: 25vw;
+  min-height: 50%;
+  width: 25%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   position: relative;
   overflow: hidden; }
   .comments-list__item:hover .comments-list__description {
     display: block; }
+  @media screen and (max-width: 768px) {
+    .comments-list__item {
+      width: 50%;
+      height: 25%; } }
 
 .comments-list {
   font-size: 0;
@@ -847,6 +897,13 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .form__col {
   padding: 0 10px;
