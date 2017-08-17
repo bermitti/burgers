@@ -1,7 +1,7 @@
 
 .burgers{
     height: 100vh;
-    min-height: 650px;   //перенести в base
+    min-width: initial;
     position: relative;
     display: flex;
     align-items: center;
@@ -12,7 +12,6 @@
 .burger-slider-wrap{
     position: relative;
     padding: 20px 0;
-    overflow: hidden; //прячу лишние слайды
 }
 
 //  плагину передать контейнер в который поместить контроллы
@@ -45,18 +44,19 @@
 
 //ul - слайды в ряд
 .burgers-slider{
-    display: flex;
-    width: 4700px;
-    overflow: hidden; //прячу лишние слайды
+    // width: 4700px;
+    display: flex; //выстрою li-шки в ряд
 }
     
 
 .burger-slider-item{
     width: 940px;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     display: flex;
-    overflow: hidden;
+    @include tablets{
+        flex-direction: column;
+    }
 }
 .ingredients{
     position: absolute;
@@ -128,11 +128,8 @@
     }
 }
 
-.burgers-slider__item{
-    position: relative;
-    padding-bottom: 60px;
-    display: flex;
-}
+
+
 .burgers-slider__left{
     text-align: center;
     align-items: flex-end;
@@ -140,6 +137,12 @@
     justify-content: center;
     flex: 1;
     // border: 1px solid red;
+.burger-slider__img{
+    @include tablets{
+        width: 65%;
+    }
+}
+
 }
 .burgers-slider__right{
     flex: 1;
@@ -152,12 +155,19 @@
         text-align: left;
         // padding-top: 70px; 
         margin-bottom: 45px;
+        @include tablets{
+            text-align: center;
+        }
     }
     &-text{
         font-family: 'Ubuntu-Light';
         font-size: 14px;
         color: #fff;
         margin-bottom: 20px;
+    }
+    @include tablets{
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 .burgers-slider__price{

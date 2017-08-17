@@ -19,6 +19,8 @@ body {
 
 .container{
     max-width: rem(940px);
+    width: 95%;
+    // border: 1px solid red;
     margin: 0 auto;
     @include tablets{
         width: 95%;

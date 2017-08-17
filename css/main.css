@@ -42,6 +42,7 @@ body {
 
 .container {
   max-width: 58.75rem;
+  width: 95%;
   margin: 0 auto; }
   @media screen and (max-width: 768px) {
     .container {
@@ -265,7 +266,8 @@ a {
   background-size: cover;
   /*растягиваем на всю ширину окна*/
   padding-top: 4.375rem;
-  padding-bottom: 1.25rem; }
+  padding-bottom: 1.25rem;
+  min-width: initial; }
 
 .best__title {
   font-family: "Gagalin-Regular";
@@ -280,8 +282,8 @@ a {
   vertical-align: top;
   /*блоки в li по верху*/
   text-align: center;
-  width: 33%; }
-  @media screen and (max-width: 768px) {
+  width: 32%; }
+  @media screen and (max-width: 480px) {
     .best-list__item {
       display: block; } }
 
@@ -302,7 +304,7 @@ a {
 
 .burgers {
   height: 100vh;
-  min-height: 650px;
+  min-width: initial;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -324,8 +326,7 @@ a {
 
 .burger-slider-wrap {
   position: relative;
-  padding: 20px 0;
-  overflow: hidden; }
+  padding: 20px 0; }
 
 .burger-slider__btn_prev {
   position: absolute;
@@ -355,19 +356,23 @@ a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  width: 4700px;
-  overflow: hidden; }
+  display: flex; }
 
 .burger-slider-item {
   width: 940px;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  overflow: hidden; }
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .burger-slider-item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .ingredients {
   position: absolute;
@@ -445,14 +450,6 @@ a {
     color: #fff;
     text-align: center; }
 
-.burgers-slider__item {
-  position: relative;
-  padding-bottom: 60px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
 .burgers-slider__left {
   text-align: center;
   -webkit-box-align: end;
@@ -471,6 +468,9 @@ a {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1; }
+  @media screen and (max-width: 768px) {
+    .burgers-slider__left .burger-slider__img {
+      width: 65%; } }
 
 .burgers-slider__right {
   -webkit-box-flex: 1;
@@ -484,11 +484,18 @@ a {
     color: #ffffff;
     text-align: left;
     margin-bottom: 45px; }
+    @media screen and (max-width: 768px) {
+      .burgers-slider__right-title {
+        text-align: center; } }
   .burgers-slider__right-text {
     font-family: 'Ubuntu-Light';
     font-size: 14px;
     color: #fff;
     margin-bottom: 20px; }
+  @media screen and (max-width: 768px) {
+    .burgers-slider__right {
+      padding-left: 10%;
+      padding-right: 10%; } }
 
 .burgers-slider__price {
   display: inline-block;
@@ -525,7 +532,7 @@ a {
   background-size: cover;
   position: relative;
   height: 100vh;
-  min-height: 650px; }
+  min-width: initial; }
 
 .team__container {
   position: absolute;
@@ -817,7 +824,8 @@ a {
   padding-top: 65px;
   font-family: "Ubuntu-Light";
   font-size: 14px;
-  color: white; }
+  color: white;
+  min-width: initial; }
 
 .order__title {
   text-align: center;
@@ -955,7 +963,8 @@ a {
 .map {
   background: url("../img/bg/map.png") center center no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  min-width: initial; }
 
 .footer {
   height: 60px;

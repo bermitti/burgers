@@ -3,6 +3,7 @@
     background-size: cover; /*растягиваем на всю ширину окна*/
     padding-top: rem(70px);
     padding-bottom: rem(20px);
+    min-width: initial;
 }
 
 .best__title{
@@ -17,8 +18,8 @@
     display: inline-block;
     vertical-align: top; /*блоки в li по верху*/
     text-align: center;
-    width: 33%;
-    @include tablets{
+    width: 32%;
+    @include phones{
         display: block;
     }
 }

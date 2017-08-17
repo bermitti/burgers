@@ -3,7 +3,7 @@
     background-size: cover;
     position: relative; 
     height: 100vh;     //переннести в base как section
-    min-height: 650px; //переннести в base как section
+    min-width: initial;
 }
 
 .team__container {
