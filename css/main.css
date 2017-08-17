@@ -797,7 +797,7 @@ a {
 
 .comments-list__item {
   display: inline-block;
-  min-height: 50%;
+  height: 50%;
   width: 25%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
