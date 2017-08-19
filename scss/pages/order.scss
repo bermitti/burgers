@@ -48,6 +48,7 @@
     display: flex;
     align-items: center;
     margin-right: 20px;
+    cursor: pointer;
         &:last-child{
             margin-right: 0px;
         }
@@ -58,38 +59,77 @@
     border-radius: 5px;
     padding: 10px 5px;
 }
+
+//оформление флагов radio перезвони
+//убираем круг селектор
 .form__radio{
-    margin-right: 10px;
-    display: flex;   //центрируем красные точки и галочки внутри
-    justify-content: center; //центрируем красные точки и галочки внутри
-    align-items: center; //центрируем красные точки и галочки внутри
-        &:checked:before{
-            content: '';
-            display: block;
-            width: 40%;
-            height: 40%;
-            border-radius: 50%;
-            background: #e35028;
-        }
+    display: none;
 }
-//оформление checkbox перезвони
+//рисуем круг поле селектора
+.form__checkbox-fake-radio{
+    background: white;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+    //рисуем скрытую точку
+    &:after{
+        content: "";
+        display: none;
+        width: 40%;
+        height: 40%;
+        background: #e35028;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-50deg);    
+    }
+}
+//отображаем в круге круг для выбранного элем
+.form__radio:checked + .form__checkbox-fake-radio:after{
+         display: block;
+}
+
+//оформление флагов checkbox перезвони
+//убираем квадрат селектор
+.form__checkbox-wrapper{
+    cursor: pointer;
+}
 .form__checkbox{
+    display: none;
+} 
+//рисуем через квадрат поле селектора
+.form__checkbox-fake{
+    background: white;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 1px;
+    position: relative;
     margin-right: 10px;
-    position: relative; 
-        //рисуем через квадрат с поворотом галочку
-        &:checked:before{
-            content: '';
-            display: block;
-            width: 60%;
-            height: 40%;
-            border-bottom: solid 2px #e35028;
-            border-left: solid 2px #e35028;
-            position: absolute;
-            top: 32%;
-            left: 47%;
-            transform: translate(-50%, -50%) rotate(-60deg);    
-        }
+    //рисуем скрытую галочку
+    &:after{
+        content: "";
+        display: none;
+        width: 60%;
+        height: 40%;
+        border-bottom: solid 2px #e35028;
+        border-left: solid 2px #e35028;
+        position: absolute;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-50deg);    
+    }
 }
+//отображаем в квадрате галочку для выбранного элем
+.form__checkbox:checked + .form__checkbox-fake:after{
+         display: block;
+}
+
+
 
 //кнопка заказать
 .form__submit{
@@ -99,7 +139,7 @@
     background-color: #e45028; 
     transition: 1s;
     display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1;
     padding: 9px;
     border-radius: 05px;
@@ -114,16 +154,19 @@
 }
 //кнопка очистить
 .form__reset{
+    font-family: "Ubuntu-Light";
+    font-size: 14px;
     border: none;
     background-color: transparent;
     color: #fff;
+    transition: 1s;
     cursor: pointer;
         &:focus{
             outline: none; //убираем рамки при нажатии
             font-weight: bold;
         }
         &:hover{
-            font-weight: bold;
+            color: red;
         }
 }
 

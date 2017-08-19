@@ -19,6 +19,7 @@
     &:hover{
         .comments-list__description{
             display: block;
+            transition: 2s;
         }
     }
     @include tablets{
@@ -65,27 +66,36 @@
 
 //всплывающий комментарий
 .comments-list__description{
+    transition: 2s;
     position: absolute; /* Подменю позиционируются абсолютно */
     display: none; /* Скрываем подменю */
     height: 100%;
     width: 100%;
     z-index: 20;
-    padding: 50px 30px 10px 20px;
+    padding: 17% 10% 0;
     background-color: rgba(20, 20, 20, 0.7); //цвет и прозрачность фона
+    @include tablets{
+        padding: 4% 10% 0;
+    }
 }
 .comments-list__description-name{
     font-family: "Gagalin-Regular";
     font-size: 14px;
-    line-height: 28,11px;
     color: #ffffff;
     margin-bottom: 20px;
+    text-align: center;
 }
 .comments-list__description-text{
     font-family: "Ubuntu-Light";
     font-size: 14px;
-    line-height: 24px;
     color: #ffffff;  
-    margin-bottom: 20px;  
+    margin-bottom: 20px; 
+    @include phones{
+        display: none;
+    } 
+}
+.comments-list__description-btn{
+    text-align: center;
 }
 //кнопка подробнее
 .comments__link{

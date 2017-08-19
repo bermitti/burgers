@@ -78,6 +78,17 @@
         }
 }
 
+// попытка выравнивания
+.intro__container{
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    padding-bottom: 15%;
+}
 .intro__content{
     display: flex;
     justify-content: center;

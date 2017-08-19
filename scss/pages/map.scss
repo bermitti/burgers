@@ -53,12 +53,19 @@
 .footer-social__icon{
     display: inline-block;
     overflow: hidden;
-    width: 25px;
-    height: 25px;
+    width: rem(25px);
+    height: rem(25px);
     fill: currentColor;
     color: #5a5a5a;
         &:hover{
            color: #fff;
         }
 }
-
+.footer-cont__phone-icon{
+    display: inline-block;
+    vertical-align: middle;
+    fill: #e45028;
+    width: rem(15px);
+    height: rem(15px);
+}
+    

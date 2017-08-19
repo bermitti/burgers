@@ -40,6 +40,7 @@
 
 .food-accordeon__type{
     position: relative;
+    width: 80px;
  //задаём фон пунктам меню   
         &_bg-meat{
             background: url("../img/food-menu/meat-menu.png");
@@ -55,17 +56,8 @@
         }
 }
 
-.food-accordeon__wrapper{
-    width: 80px; //почему если не задаю тут ширину блок схлопывается?
-    // background-color: rgba(0, 0, 0, 0.55);  вариант с затемнением фона
-    // position: absolute;
-    // top: 0;
-    // bottom: 0;
-    // left: 0;
-    // right: 0;
-}
 
-.food-accordeon__link{
+.food-accordeon__text{
     font-family: 'Gagalin-Regular', serif;
     font-size: 40px;
     line-height: 64px;

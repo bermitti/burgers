@@ -55,13 +55,15 @@
                             </a>
                         </div>
                     </header>
-                    <div class="intro__content">
-                        <div class="intro__drops">
-                            <img class="intro__img" src="img/intro/GroupBurgerImg.png" alt="burger">
-                        </div>
-                        <div class="intro__description">
-                            <h2 class="intro__description-title">Мы делаем</h2>
-                            <div class="intro__description-text">натуральные бургеры</div>
+                    <div class="intro__container">
+                        <div class="intro__content">
+                            <div class="intro__drops">
+                                <img class="intro__img" src="img/intro/GroupBurgerImg.png" alt="burger">
+                            </div>
+                            <div class="intro__description">
+                                <h2 class="intro__description-title">Мы делаем</h2>
+                                <div class="intro__description-text">натуральные бургеры</div>
+                            </div>
                         </div>
                     </div>
                     <div class="intro-arrow">
@@ -292,11 +294,9 @@
                 <div class="food-menu__wrapper">
                     <ul class="food-accordeon">
                         <li class="food-accordeon__item food-accordeon__item_active">
-                            <div class="food-accordeon__type food-accordeon__type_bg-meat">
-                                <div class="food-accordeon__wrapper">
-                                    <a class="food-accordeon__link" href="#">Для мясоедов</a>
-                                </div>
-                            </div>
+                            <a href="#" class="food-accordeon__type food-accordeon__type_bg-meat">
+                                <span class="food-accordeon__text">Для мясоедов</span>
+                            </a>
                             <div class="food-accordeon__popup">
                                 <p>
                                     Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
@@ -308,11 +308,9 @@
                             </div>
                         </li>
                         <li class="food-accordeon__item">
-                            <div class="food-accordeon__type food-accordeon__type_bg-veget">
-                                <div class="food-accordeon__wrapper">
-                                    <a class="food-accordeon__link" href="#">Вегетарианское</a>
-                                </div>
-                            </div>
+                            <a href="#" class="food-accordeon__type food-accordeon__type_bg-meat">
+                                <span class="food-accordeon__text">Вегетарианское</span>
+                            </a>
                             <div class="food-accordeon__popup">
                                 <p>
                                     Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
@@ -324,11 +322,9 @@
                              </div>
                         </li>
                         <li class="food-accordeon__item">
-                            <div class="food-accordeon__type food-accordeon__type_bg-diet">
-                                <div class="food-accordeon__wrapper">
-                                    <a class="food-accordeon__link" href="#">Диетическое</a>
-                                </div>
-                            </div>
+                            <a href="#" class="food-accordeon__type food-accordeon__type_bg-meat">
+                                <span class="food-accordeon__text">Диетическое</span>
+                            </a>
                             <div class="food-accordeon__popup">
                                 <p>
                                     Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
@@ -481,26 +477,29 @@
                             именно в таком случае браузер понимает, что переключатели связаны между собой 
                             и помечает только один пункт из предложенных  -->
                             <div class="form__row">
-                                <div class="form__checkbox-wrapper">
-                                    <input type="radio" name="payment" class="form__radio" id="form-payment-cash" value="cash" checked>
+                                <label class="form__checkbox-wrapper">
+                                    <input type="radio" name="payment" class="form__radio" value="cash">
+                                    <div class="form__checkbox-fake-radio"></div>
                                     <label for="form-payment-cash" class="form__label">Потребуется сдача</label>
-                                </div>
-                                <div class="form__checkbox-wrapper">
-                                    <input type="radio" name="payment" class="form__radio" id="form-payment-card" value="card">
-                                    <label for="form-payment-card" class="form__label">Оплата по карте</label>
-                                </div>
+                                </label>
+                                <label class="form__checkbox-wrapper">
+                                    <input type="radio" name="payment" class="form__radio" value="card">
+                                    <div class="form__checkbox-fake-radio"></div>
+                                    <div for="form-payment-card" class="form__label">Оплата по карте</div>
+                                </label>
                             </div>
                             <!-- поле выбора checkbox -->
                             <div class="form__row">
-                                <div class="form__checkbox-wrapper">
-                                    <input type="checkbox" name="callback" class="form__checkbox" id="form-callback" value="false" checked>
-                                    <label for="form-callback" class="form__label">Не перезванивать</label>
-                                </div>
+                                <label class="form__checkbox-wrapper">
+                                    <input type="checkbox" name="callback" class="form__checkbox">
+                                    <div class="form__checkbox-fake"></div>
+                                    <div class="form__label">Не перезванивать</div>
+                                </label>
                             </div>
                             <!-- поле кнопок Заказать Очистить -->
                             <div class="form__row">
-                                <input type="submit" value="Заказать" class="form__submit">
-                                <input type="submit" value="Очистить" class="form__reset">
+                                <input class="form__submit" type="submit" value="Заказать">
+                                <input class="form__reset" type="reset" value="Очистить">
                             </div>
                         </div>
                     </form>
@@ -517,6 +516,9 @@
                                 Санкт-Петербург, ул.Бабушкина, д.12/1, 15
                             </div>
                             <div class="footer-cont__phone">
+                                <svg class="footer-cont__phone-icon">
+                                    <use xlink:href='img/map/sprite/sprite.svg#phone'></use>
+                                </svg>
                                 <a href="tel:+7 (812) 377-13-77" class="footer-cont__phone-link">+7 (812) 377-13-77</a>
                             </div>
                         </div>

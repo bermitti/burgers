@@ -50,7 +50,7 @@
     
 
 .burgers-slider__item{
-    width: 940px;
+    max-width: 940px;
     position: relative;
     padding-bottom: 60px;
     display: flex;
@@ -78,8 +78,16 @@
         &-text{
             color: #fff;
             font-size: 14px;
-            font-family: 'Gagalin';
+            font-family: 'Gagalin-Regular';
             text-align: center;
+        }
+    }
+    &__table{
+        width: 100%;
+    }
+    &:hover{
+        .ingredients__dropdown{
+            display: block;
         }
     }
 }
@@ -96,6 +104,7 @@
     transition: opacity 0.3s;
     z-index: 1;
     top: 0;
+    display: none;
 }
 
 .burger-weight{
@@ -168,6 +177,7 @@
     &-text{
         font-family: 'Ubuntu-Light';
         font-size: 14px;
+        line-height: 24px;
         color: #fff;
         margin-bottom: 20px;
         @include tablets{
@@ -203,12 +213,12 @@
     margin-left: 30px;
     //свойства вынести в общий класс .btn
     background: #e45028;
+    font-family: 'Ubuntu-Light';
     font-size: 13px;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    padding: 5px 13px;
-    font-family: 'Ubuntu-Light';
+    padding: 11px 17px;
 }
