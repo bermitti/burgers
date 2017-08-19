@@ -417,7 +417,7 @@ a {
   background: rgba(227, 80, 40, 0.4);
   width: 90px;
   height: 90px;
-  border-radius: .5px;
+  border-radius: 5px;
   z-index: 1;
   display: -webkit-box;
   display: -webkit-flex;
