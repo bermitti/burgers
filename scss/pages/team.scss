@@ -41,13 +41,24 @@
     text-align: center; 
 }
 
+.team-accordeon__content {
+    margin-left: 18px;
+    height: 0; //прячем контент аккордеона
+    display: flex;
+    flex-direction: row; 
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .team-accordeon__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
     margin-bottom: 20px; 
-    &.active{
+    &.activeTeam{
         margin-bottom: 25px;    //почему? привёл к pixel perfect
         .team-accordeon__title {
             color: #f9b43b; 
@@ -80,16 +91,7 @@
     margin-right: 10px; 
 }
 
-.team-accordeon__content {
-    margin-left: 18px;
-    height: 0; //прячем контент аккордеона
-    display: flex;
-    flex-direction: row; 
-    @include tablets{
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 
 .team-accordeon__avatar {
     width: 100px;

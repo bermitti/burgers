@@ -81,7 +81,9 @@
 .container{
     &_intro{
         height: 100%;
-        border: 1px solid #94ff00;
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid #94ff00;
     }
 }
 
@@ -89,11 +91,10 @@
 .intro__container{
     display: flex;
     flex-grow: 1;
-    height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    // border: 1px solid red;
     padding-bottom: 15%;
 }
 .intro__content{
