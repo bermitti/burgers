@@ -1,4 +1,4 @@
-//серое dcgksdf.ott меню для телефона при разрешении 480px
+//серое всплывающее меню для телефона при разрешении 480px
 .humburger-menu{
     position: fixed;
     top: 0;
@@ -55,4 +55,9 @@
 .nav-humburger__link{
     font-family: 'Gagalin-Regular';
     font-size: rem(24px);
+}
+
+// класс для js
+.active{
+    display: flex;
 }
