@@ -78,6 +78,13 @@
         }
 }
 
+.container{
+    &_intro{
+        height: 100%;
+        border: 1px solid #94ff00;
+    }
+}
+
 // попытка выравнивания
 .intro__container{
     display: flex;

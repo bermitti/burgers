@@ -1,14 +1,14 @@
 
+
+
+$(document).ready(function(){
+
+
 // полноэкранное меню -- ВСПЛЫВАШКА ДЛЯ ТЕЛЕФОНА --
 // класс .active в burger-menu.scss
-
-//значение кнопки открытия полноэкранного меню
-//значение кнопки закрытия полноэкранного меню 
-//div-скрытая секция полноэкранного меню , в десктоп разрешении
-$(document).ready(function(){
-	var menuOn = $('.intro-menu-link'),   
-		menuOff = $('.humburger-menu__close'),  
-		menu = $('.humburger-menu');  
+	var menuOn = $('.intro-menu-link'),         //значение кнопки открытия полноэкранного меню 
+		menuOff = $('.humburger-menu__close'),  //значение кнопки закрытия полноэкранного меню 
+		menu = $('.humburger-menu');            //div-скрытая секция полноэкранного меню , в десктоп разрешении
 
         $(menuOn).on('click',function(e){
             e.preventDefault();
@@ -18,4 +18,10 @@ $(document).ready(function(){
             e.preventDefault();
             $(menu).toggleClass('active');
         });
+
+
+
+
+
+
     });

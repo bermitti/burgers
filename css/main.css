@@ -165,6 +165,10 @@ a {
   .order-link:hover {
     opacity: 0.7; }
 
+.container_intro {
+  height: 100%;
+  border: 1px solid #94ff00; }
+
 .intro__container {
   display: -webkit-box;
   display: -webkit-flex;
