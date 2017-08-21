@@ -1,3 +1,4 @@
+// СЕКЦИЯ 3 СЛАЙДЕР МЕНЮ
 
 .burgers{
     height: 100vh;
@@ -12,6 +13,8 @@
 .burger-slider-wrap{
     position: relative;
     padding: 20px 0;
+    height: 430px;
+    border: 1px solid green;
 }
 
 //  плагину передать контейнер в который поместить контроллы
@@ -46,6 +49,10 @@
 .burgers-slider{
     // width: 4700px;
     display: flex; //выстрою li-шки в ряд
+    width: 5000px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
     
 
