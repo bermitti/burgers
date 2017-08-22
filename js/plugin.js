@@ -1,6 +1,4 @@
 
-<script>
-    jQuery(document).ready(function(){
-        jQuery('.bxslider').bxSlider();
+jQuery(document).ready(function(){
+        jQuery('.burgers-slider').bxSlider();
     });
-</script>
