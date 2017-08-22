@@ -1,9 +1,20 @@
 
 jQuery(document).ready(function(){
 
-    var settings = {
-        speed : 1000
-    }
+    var slider = $('.burgers-slider').bxSlider({
+        speed : 1000,
+        pager : false
+    });
 
-        jQuery('.burgers-slider').bxSlider(settings);
+    $('.burger-slider__btn_next').on('click', function(e){
+        e.preventDefault();
+        slider.goToNextSlide();
+    })
+
+    $('.burger-slider__btn_prev').on('click', function(e){
+        e.preventDefault();
+        slider.goToPrevSlide();
+    })
+
+    
 });
