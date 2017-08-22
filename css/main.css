@@ -381,8 +381,7 @@ a {
 
 .burger-slider-wrap {
   position: relative;
-  padding: 20px 0;
-  border: 1px solid green; }
+  padding: 20px 0; }
 
 .burger-slider__btn_prev {
   position: absolute;
@@ -421,7 +420,8 @@ a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-right: 15px; }
   @media screen and (max-width: 768px) {
     .burgers-slider__item {
       -webkit-box-orient: vertical;

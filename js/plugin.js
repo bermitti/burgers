@@ -1,4 +1,9 @@
 
 jQuery(document).ready(function(){
-        jQuery('.burgers-slider').bxSlider();
-    });
+
+    var settings = {
+        speed : 1000
+    }
+
+        jQuery('.burgers-slider').bxSlider(settings);
+});
