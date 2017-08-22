@@ -299,7 +299,15 @@ a {
   /*растягиваем на всю ширину окна*/
   padding-top: 4.375rem;
   padding-bottom: 1.25rem;
-  min-width: initial; }
+  min-width: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .best__title {
   font-family: "Gagalin-Regular";
@@ -671,10 +679,10 @@ a {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: left;
+  -webkit-align-items: left;
+  -ms-flex-align: left;
+  align-items: left;
   overflow: hidden;
   margin-bottom: 20px; }
   .team-accordeon__item.activeTeam {
@@ -687,6 +695,12 @@ a {
         transform: rotate(180deg); }
     .team-accordeon__item.activeTeam .team-accordeon__content {
       height: auto; }
+  @media screen and (max-width: 768px) {
+    .team-accordeon__item {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .team-accordeon__title {
   font-family: 'Gagalin-Regular';
@@ -740,7 +754,10 @@ a {
   letter-spacing: 1px;
   color: #fff;
   margin-bottom: 10px;
-  text-align: center; }
+  text-align: left; }
+  @media screen and (max-width: 768px) {
+    .team-accordeon__desc-occupation {
+      text-align: center; } }
 
 .team-accordeon__desc-text {
   font-family: 'Ubuntu-Light';
@@ -748,7 +765,10 @@ a {
   line-height: 24px;
   color: #fff;
   margin-bottom: 10px;
-  text-align: center; }
+  text-align: left; }
+  @media screen and (max-width: 768px) {
+    .team-accordeon__desc-text {
+      text-align: center; } }
 
 .food-menu {
   background: url("../img/bg/bg-food-menu.png") center center no-repeat;
@@ -900,19 +920,28 @@ a {
   font-size: 14px;
   color: #ffffff;
   margin-bottom: 20px;
-  text-align: center; }
+  text-align: left; }
+  @media screen and (max-width: 768px) {
+    .comments-list__description-name {
+      text-align: center; } }
 
 .comments-list__description-text {
   font-family: "Ubuntu-Light";
   font-size: 14px;
   color: #ffffff;
   margin-bottom: 20px; }
+  @media screen and (max-width: 768px) {
+    .comments-list__description-text {
+      text-align: center; } }
   @media screen and (max-width: 480px) {
     .comments-list__description-text {
       display: none; } }
 
 .comments-list__description-btn {
-  text-align: center; }
+  text-align: left; }
+  @media screen and (max-width: 768px) {
+    .comments-list__description-btn {
+      text-align: center; } }
 
 .comments__link {
   padding: 10px 17px;
@@ -934,7 +963,15 @@ a {
   font-family: "Ubuntu-Light";
   font-size: 14px;
   color: white;
-  min-width: initial; }
+  min-width: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .order__title {
   text-align: center;

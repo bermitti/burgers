@@ -83,19 +83,29 @@
     font-size: 14px;
     color: #ffffff;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
+    @include tablets{
+        text-align: center;
+    }
+
 }
 .comments-list__description-text{
     font-family: "Ubuntu-Light";
     font-size: 14px;
     color: #ffffff;  
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    @include tablets{
+        text-align: center;
+    } 
     @include phones{
         display: none;
     } 
 }
 .comments-list__description-btn{
-    text-align: center;
+    text-align: left;
+    @include tablets{
+        text-align: center;
+    }
 }
 //кнопка подробнее
 .comments__link{
