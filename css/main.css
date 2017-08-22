@@ -374,7 +374,6 @@ a {
 .burger-slider-wrap {
   position: relative;
   padding: 20px 0;
-  height: 430px;
   border: 1px solid green; }
 
 .burger-slider__btn_prev {
@@ -405,11 +404,7 @@ a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  width: 5000px;
-  position: absolute;
-  top: 0;
-  left: 0; }
+  display: flex; }
 
 .burgers-slider__item {
   max-width: 940px;

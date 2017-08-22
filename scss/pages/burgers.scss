@@ -13,7 +13,7 @@
 .burger-slider-wrap{
     position: relative;
     padding: 20px 0;
-    height: 430px;
+    // height: 470px;
     border: 1px solid green;
 }
 
@@ -49,14 +49,16 @@
 .burgers-slider{
     // width: 4700px;
     display: flex; //выстрою li-шки в ряд
-    width: 5000px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    // width: 5000px;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
 }
     
 
 .burgers-slider__item{
+    // display: inline-block;
+    // white-space: normal
     max-width: 940px;
     position: relative;
     padding-bottom: 60px;
@@ -65,6 +67,18 @@
         flex-direction: column;
     }
 }
+
+//обёртка внутри li-шки для overflow
+// .slider-list{
+//     max-width: 940px;
+//     position: relative;
+//     padding-bottom: 60px;
+//     display: flex;
+//     @include tablets{
+//         flex-direction: column;
+//     }
+// }
+
 .ingredients{
     position: absolute;
     top: 0;
