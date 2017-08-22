@@ -1103,7 +1103,6 @@ a {
     color: red; }
 
 .map {
-  background: url("../img/bg/map.png") center center no-repeat;
   background-size: cover;
   position: relative;
   min-width: initial; }
