@@ -1,6 +1,6 @@
 
 <script>
     jQuery(document).ready(function(){
-        jQuery('.bxslider').bxSlider()
+        jQuery('.bxslider').bxSlider();
     });
 </script>

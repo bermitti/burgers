@@ -100,16 +100,16 @@ $(document).ready(function(){
                 });
         
             myMap.behaviors.disable('drag');
-            myMap.behaviors.disable('scrollZoom');
+            myMap.behaviors.disable('scrollZoom'); //  Добавляем функцию отключения перетаскивания карты мышью и ставим аргумент
         
             var coords = [
-                [59.972641, 30.311758], [59.946128, 30.386945], 
-                [59.893901, 30.317251], [59.916146, 30.493895]
+                [59.97181101008434,30.311234174697656], [59.94753632623325,30.384361921279684], 
+                [59.90134799958657,30.313637433974986], [59.917383347823495,30.49903172108436]
             ],
                 myCollection = new ymaps.GeoObjectCollection({}, {
                 draggable: false,
                 iconLayout: 'default#image',  //все метки - картинки
-                iconImageHref: 'img/section__contacts/map-marker.png',
+                iconImageHref: 'img/map/map-marker.png',
                 iconImageSize: [46, 57],
                 iconImageOffset: [-26, -52]
             });
