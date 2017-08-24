@@ -81,8 +81,7 @@ img {
   height: 100vh;
   height: 100%;
   min-height: 40.625rem;
-  background-color: rgba(0, 0, 0, 0.31);
-  min-width: 58.75rem; }
+  background-color: rgba(0, 0, 0, 0.31); }
 
 a {
   color: white;
