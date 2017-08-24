@@ -25,9 +25,9 @@
     &__close-icon{
         fill: #fff;
     }
-    @include phones{
-        display: flex;
-    }
+    // @include phones{
+    //     display: flex;
+    // }
 }
 .nav-humburger__item{
     display: flex;;

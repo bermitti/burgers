@@ -13,7 +13,7 @@ body {
 }
 .wrapper {
     min-height: 100%;
-    // height: 100%;
+    height: 100%;  //для one p.scroll убрал прокрутку
     overflow: hidden;  //всё что вылазим обрезаем
     /* min-width: 1100px; ширина макета */
 }
@@ -24,6 +24,7 @@ body {
     min-height: rem(650px);
     // transform: translateY(-100%);  будем менять через js
     transition: transform 1s;
+    will-change: transform;
 }
 .container{
     max-width: 940px;
@@ -52,7 +53,7 @@ img {
 }
 .section {
     height: 100vh;   //- не всегда коректно работают на мобильных
-    // height: 100%;
+    height: 100%;
     min-height: rem(650px);
     background-color: rgba(0, 0, 0, 0.31);
     min-width: rem(940px);
