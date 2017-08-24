@@ -91,37 +91,38 @@ $(document).ready(function(){
 
 //предупреждение о не заполненной форме СЕКЦИЯ 7 ОФОРМЛЕНИЕ ЗАКАЗА 
 
-function validate_form()
-{
-	valid = true;
-        if ( document.form.form__input.value == "" )
-        {
-                alert ( "Пожалуйста заполните поля формы" );
-                valid = false;
-        }
 
-        return valid;
-}
-$('.form__submit').on('click',function(e){
+
+// function validate_form()
+// {
+//     var formValues = $('.form__input.value');
+//         valid = true;
+        
+//         if ( document.form.form__input.value == "" )
+//         {
+//                 alert ( "Пожалуйста заполните поля формы" );
+//                 valid = false;
+//         }
+
+//         return valid;
+// }
+
+$('.form__submit').on('submit',function(e){
     e.preventDefault();
-    validate_form();
+
+    var input = $('.form__input');
+
+    input.each(function () {
+        var $this = $(this);
+    
+       if ( $this.val() === "" ) {
+            alert ( "Пожалуйста заполните поля формы" );
+        }
+    })
 });
 
+
 //подключение карты
-    // var map = new ymaps.Map("map", {
-    //     center: [55.76, 37.64], 
-    //     zoom: 7
-    // });
-
-    // ymaps.ready(init);
-    // var myMap;
-
-    // function init(){     
-    //     myMap = new ymaps.Map("map", {
-    //         center: [55.76, 37.64],
-    //         zoom: 7
-    //     });
-    // }
 	function init() {
         
             var	myMap = new ymaps.Map("map", {
@@ -151,6 +152,17 @@ $('.form__submit').on('click',function(e){
             myMap.geoObjects.add(myCollection);
             }
             ymaps.ready(init);
+
+//one page scroll
+    $('.wrapper').on('wheel',function(e){
+        console.log(e.originalEvent.deltaY);
+    
+    });
+
+
+
+
+
 
 
 
