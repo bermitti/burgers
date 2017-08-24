@@ -21,9 +21,11 @@
 
                 setTimeout(function() {
                     isScroll = false; // присваиваем обратно как выполнится действие
+                    $('.aside-nav__item').eq(sectionEq).addClass('aside-nav__item_active').siblings().removeClass('aside-nav__item_active');
                 }, 1300);
             }
         }
+    
 
 
         $('.wrapper').on('wheel',function(e){
