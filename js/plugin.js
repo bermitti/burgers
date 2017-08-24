@@ -1,4 +1,6 @@
 
+
+// bxslider
 jQuery(document).ready(function(){
 
     var slider = $('.burgers-slider').bxSlider({
