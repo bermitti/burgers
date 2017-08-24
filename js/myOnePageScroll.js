@@ -35,14 +35,17 @@
             var nextSection = activeSect.next();
             var prevSection = activeSect.prev();
 
-            if (deltaY < 0) {//scroll wheel
+            //если меньше нуля И длинна объекта не False, не равныа 0
+            if (deltaY < 0 && prevSection.length) {//scroll wheel
                 console.log('страница идёт вниз');
                 console.log(deltaY);
                 //вернёт значение индекса секции следующей перед активной
-                perfomTransition(prevSection.index());
+                //возвращает -1 если элемент не найден и ГЛЮК
+                perfomTransition(prevSection.index()); 
             }
 
-            if (deltaY > 0) {//scroll wheel
+            //если больше нуля И длинна объекта не False, не равныа 0
+            if (deltaY > 0 && nextSection.length) {//scroll wheel
                 console.log('страница идёт вверх');
                 console.log(deltaY);
                 // perfomTransition(2); //s4
