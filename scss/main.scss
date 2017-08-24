@@ -31,8 +31,7 @@ $phones: 480px;
 @import 'pages/aside-nav';
 @import 'pages/intro-menu';  //меню - три полоски, для малого разрешения экрана
 @import 'pages/burger-menu'; //серое всплывающее меню для телефона при разрешении 480px
-
-
+@import 'pages/popup-comments';  //всплывающий комментарий в секции 6 КОММЕНТАРИИ
 
 // //types
 // @import 'types/adaptive';

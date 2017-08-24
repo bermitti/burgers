@@ -74,6 +74,39 @@ $(document).ready(function(){
     //     });
     // });
     
+
+    //СЕКЦИИ 6 КОММЕНТАРИИ
+	var aboutOn = $('.comments-list__description-btn'),        
+        aboutOff = $('.full-review__close'),  //значение кнопки закрытия полноэкранного меню 
+        about = $('.full-review__wrapp');   //скрытая секция кнопки подробней
+
+    $(aboutOn).on('click',function(e){
+        e.preventDefault();
+        $(about).toggleClass('popup-comm');
+    });
+    $(aboutOff).on('click',function(e){
+        e.preventDefault();
+        $(about).toggleClass('popup-comm');
+    });
+
+//предупреждение о не заполненной форме СЕКЦИЯ 7 ОФОРМЛЕНИЕ ЗАКАЗА 
+
+function validate_form()
+{
+	valid = true;
+        if ( document.form.form__input.value == "" )
+        {
+                alert ( "Пожалуйста заполните поля формы" );
+                valid = false;
+        }
+
+        return valid;
+}
+$('.form__submit').on('click',function(e){
+    e.preventDefault();
+    validate_form();
+});
+
 //подключение карты
     // var map = new ymaps.Map("map", {
     //     center: [55.76, 37.64], 
@@ -89,8 +122,6 @@ $(document).ready(function(){
     //         zoom: 7
     //     });
     // }
-
-
 	function init() {
         
             var	myMap = new ymaps.Map("map", {
