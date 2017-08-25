@@ -1377,6 +1377,10 @@ a {
   right: 0;
   bottom: 0;
   background: #2f3234;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -1389,11 +1393,7 @@ a {
   opacity: 0.95;
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
-  transition: opacity .3s;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+  transition: opacity .3s; }
 
 .popup-comm {
   display: none; }
