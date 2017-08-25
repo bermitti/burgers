@@ -107,7 +107,7 @@ $(document).ready(function(){
 //         return valid;
 // }
 
-$('.form__submit').on('submit',function(e){
+$('form').on('submit',function(e){
     e.preventDefault();
 
     var input = $('.form__input');
@@ -118,6 +118,8 @@ $('.form__submit').on('submit',function(e){
        if ( $this.val() === "" ) {
             alert ( "Пожалуйста заполните поля формы" );
         }
+
+        return;
     })
 });
 
