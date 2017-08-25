@@ -817,7 +817,7 @@ a {
   display: flex; }
   .food-accordeon__item_active .food-accordeon__popup {
     padding: 60px 30px;
-    width: 540px;
+    width: 45vw;
     color: white; }
 
 .food-accordeon__type {
