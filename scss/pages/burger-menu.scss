@@ -50,6 +50,12 @@
                 display: none; /*убрал точку после крайней  li*/
             }
     }
+    &:hover{
+        .nav-humburger__link{
+            text-decoration: underline;
+            color: #f9b43b;
+        }
+    }
 }
 
 .nav-humburger__link{

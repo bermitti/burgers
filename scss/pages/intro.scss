@@ -59,7 +59,8 @@
     font-size: rem(13px);
     text-transform: uppercase;
         &:hover{
-            font-weight: bold;
+            text-decoration: underline;
+            color: #f9b43b;
         }
 }
 //кнопка заказать
