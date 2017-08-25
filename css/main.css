@@ -819,6 +819,8 @@ a {
     padding: 60px 30px;
     width: 45vw;
     color: white; }
+  .food-accordeon__item_active .food-accordeon__text {
+    color: #f9b43b; }
 
 .food-accordeon__type {
   position: relative;
